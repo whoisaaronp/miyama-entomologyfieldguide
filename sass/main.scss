@@ -1,0 +1,48 @@
+
+@charset "UTF-8";
+
+.hidden
+{
+	display: none;
+}
+
+/* variables */ 
+$brand-color: teal;
+$primary-color: pink;
+
+/* import the muffins*/
+@import "mixin.scss";
+
+/* h1*/
+h1{
+    color: $brand-color;
+}
+
+/* h2*/
+h2
+{
+    color: darken($primary-color, 50%);
+}
+
+/* h3*/
+h3
+{
+    color: lighten($primary-color, 10%);
+}
+
+h4{
+ @include rotated(3deg)   
+}
+
+#main-header{
+    height: 200px;
+    background-color: $brand-color;
+
+    /* nesting logo color*/ 
+     #logo{
+        width: 320px;
+        height: 20px;
+        background-color: $primary-color;
+        @include rotated(10deg)
+    }
+}

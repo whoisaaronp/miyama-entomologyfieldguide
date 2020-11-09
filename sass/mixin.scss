@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+// mixin rotated
+@mixin rotated($radius){
+    -webkit-transform: rotate($radius);
+    -ms-transform: rotate($radius);
+    transform: rotate($radius);
+}
