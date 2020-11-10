@@ -1,35 +1,66 @@
 .hidden {
   display: none; }
 
-/* variables */
-/* import the muffins*/
-/* h1*/
-h1 {
-  color: teal; }
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
 
-/* h2*/
-h2 {
-  color: #c00022; }
+*:before,
+*:after {
+  box-sizing: border-box; }
 
-/* h3*/
-h3 {
-  color: #fff3f5; }
+body {
+  font-family: "Exo", sans-serif; }
 
-h4 {
-  -webkit-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg); }
+#explore-landing-page-header {
+  width: 1000px;
+  font-size: 4vw;
+  text-align: center;
+  line-height: normal; }
 
 #main-header {
-  height: 200px;
-  background-color: teal;
   /* nesting logo color*/ }
   #main-header #logo {
-    width: 320px;
-    height: 20px;
-    background-color: pink;
-    -webkit-transform: rotate(10deg);
-    -ms-transform: rotate(10deg);
-    transform: rotate(10deg); }
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+    overflow: auto; }
+  #main-header #logo-content img {
+    width: 600px;
+    height: auto; }
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%; }
+
+#introduction-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px; }
+
+#introduction-button button {
+  padding: 20px;
+  width: 375px;
+  height: 65px;
+  border-style: none;
+  border: 2px solid #444;
+  background-color: white; }
+
+.introduction p {
+  font-size: 2vw;
+  font-weight: 400;
+  margin-top: 20px; }
+
+.library-button {
+  font-size: 18px; }
 
 /*# sourceMappingURL=main.css.map */

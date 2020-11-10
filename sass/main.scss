@@ -1,48 +1,88 @@
-
 @charset "UTF-8";
 
-.hidden
-{
-	display: none;
+.hidden {
+  display: none;
 }
 
-/* variables */ 
-$brand-color: teal;
-$primary-color: pink;
-
-/* import the muffins*/
-@import "mixin.scss";
-
-/* h1*/
-h1{
-    color: $brand-color;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-/* h2*/
-h2
-{
-    color: darken($primary-color, 50%);
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
-/* h3*/
-h3
-{
-    color: lighten($primary-color, 10%);
+body {
+  font-family: "Exo", sans-serif;
 }
 
-h4{
- @include rotated(3deg)   
+// Sass Variables
+$landing-page-text: 4vw;
+$exo-header: 1vw;
+$exo-subheader: 1vw; 
+$exo-regular: 1vw;
+
+// introduction text size
+#explore-landing-page-header {
+  width: 1000px;
+  font-size: $landing-page-text;
+  text-align: center;
+  line-height: normal;
 }
 
-#main-header{
-    height: 200px;
-    background-color: $brand-color;
+#main-header {
+  /* nesting logo color*/
+  #logo {
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+    overflow: auto;
+  }
 
-    /* nesting logo color*/ 
-     #logo{
-        width: 320px;
-        height: 20px;
-        background-color: $primary-color;
-        @include rotated(10deg)
-    }
+  #logo-content img {
+    width: 600px;
+    height: auto;
+  }
+}
+
+// landing page content
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
+
+#introduction-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+// button styling
+#introduction-button button {
+  padding: 20px;
+  width: 375px;
+  height: 65px;
+  border-style: none;
+  border: 2px solid #444;
+  background-color: white;
+}
+
+.introduction p {
+  font-size: 2vw;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.library-button {
+  font-size: 18px;
 }
