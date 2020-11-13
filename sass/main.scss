@@ -21,18 +21,9 @@ body {
 
 // Sass Variables
 $landing-page-text: 4vw;
-$exo-header: 1vw;
-$exo-subheader: 1vw; 
+$exo-header: 4vw;
+$exo-subheader: 2vw; 
 $exo-regular: 1vw;
-
-// introduction text size
-#explore-landing-page-header {
-  width: 1000px;
-  font-size: $landing-page-text;
-  text-align: center;
-  line-height: normal;
-}
-
 
 header {
 	width: 90%;
@@ -41,6 +32,14 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 auto;
+}
+
+// introduction text size
+#explore-landing-page-header {
+  width: 90%;
+  font-size: $landing-page-text;
+  text-align: center;
+  line-height: normal;
 }
 
 .nav-links li {
@@ -110,7 +109,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 #introduction-button {
@@ -118,6 +117,7 @@ header {
   justify-content: center;
   margin-top: 80px;
 }
+
 // button styling
 #introduction-button button {
   padding: 20px;
@@ -166,4 +166,30 @@ header {
 		-ms-transform: translateX(0%);
 		transform: translateX(0px);
 	}
+}
+
+.page-title-container
+{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.page-title{
+  
+  font-size: $exo-header;
+  font-weight: 600;
+  margin-top: 60px;
+  margin-bottom: 20px;
+
+  .page-description
+  {
+    font-size: $exo-subheader;
+    margin-top: 20px;
+    background-color: red;
+    
+  }
 }
