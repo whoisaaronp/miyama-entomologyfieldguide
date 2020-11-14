@@ -33,11 +33,15 @@ header {
   list-style: none; }
 
 .hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   align-items: center; }
 
 .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -67,6 +71,8 @@ header {
     height: 100vh;
     width: 100%;
     padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,6 +84,8 @@ header {
     height: auto; }
 
 .introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,6 +93,8 @@ header {
   margin-top: 15%; }
 
 #introduction-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   margin-top: 80px; }
@@ -142,9 +152,38 @@ header {
   font-weight: 600;
   margin-top: 60px;
   margin-bottom: 20px; }
-  .page-title .page-description {
-    font-size: 2vw;
-    margin-top: 20px;
-    background-color: red; }
+
+.page-description {
+  font-size: 1vw;
+  margin-top: 20px;
+  font-weight: 400; }
+
+#grid-stack {
+  display: flex;
+  flex-direction: column;
+  margin-top: 130px; }
+
+.insect-grid {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto; }
+  .insect-grid .insect-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 450px;
+    height: 450px;
+    padding: 20px;
+    margin-right: 30px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+  .insect-grid .insect-image img {
+    cursor: pointer;
+    width: 200px;
+    transition: all 0.2 ease-in-out; }
+  .insect-grid .insect-image img:hover {
+    transform: scale(1.1); }
 
 /*# sourceMappingURL=main.css.map */
