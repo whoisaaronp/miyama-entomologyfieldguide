@@ -22,16 +22,20 @@ body {
 // Sass Variables
 $landing-page-text: 4vw;
 $exo-header: 4vw;
+<<<<<<< HEAD
 $exo-subheader: 1.5vw; 
+=======
+$exo-subheader: 1.5vw;
+>>>>>>> 2854663de59e45a35a55aafe27cd477f8bffc863
 $exo-regular: 1vw;
 
 header {
-	width: 90%;
-	height: 18vh;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 0 auto;
+  width: 90%;
+  height: 18vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 
 // introduction text size
@@ -43,12 +47,14 @@ header {
 }
 
 .nav-links li {
-	display: inline;
-	padding: 0px 20px;
-	list-style: none;
+  display: inline;
+  padding: 0px 20px;
+  list-style: none;
 }
 
 .hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,6 +62,8 @@ header {
 }
 
 .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -73,41 +81,46 @@ header {
 
 .nav-links li a {
   text-transform: uppercase;
-  color:black;
+  color: black;
   font-size: 4rem;
   font-weight: $exo-header;
+<<<<<<< HEAD
   text-decoration: none; 
+=======
+  text-decoration: none;
+>>>>>>> 2854663de59e45a35a55aafe27cd477f8bffc863
 }
 
 .nav-links li {
   opacity: 0px;
-
 }
 
 #intro-logo-container {
   /* nesting logo color*/
-  #logo-content{
+  #logo-content {
     height: 100vh;
     width: 100%;
     padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
     resize: both;
     overflow: auto;
     margin: 0 auto;
-
   }
 
   #logo-content img {
     width: 600px;
     height: auto;
- 
   }
 }
 
 // landing page content
 .introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,6 +129,8 @@ header {
 }
 
 #introduction-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   margin-top: 80px;
@@ -145,14 +160,15 @@ header {
 /*  when you click the burger  */
 
 .nav-active {
-	-o-transform: translateX(0%);
-	-webkit-transform: translateX(0%);
-	-moz-transform: translateX(0%);
-	-ms-transform: translateX(0%);
-	transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 @keyframes navLinkFade {
+<<<<<<< HEAD
 	from {
 		opacity: 0;
 		-o-transform: translateX(50px);
@@ -179,15 +195,42 @@ header {
     flex-direction: column;
     align-items: center;
 	margin: 0 auto;
+=======
+  from {
+    opacity: 0;
+    -o-transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1px;
+    -o-transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0px);
+  }
+>>>>>>> 2854663de59e45a35a55aafe27cd477f8bffc863
 }
 
-.page-title{
-  
+.page-title-container {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.page-title {
   font-size: $exo-header;
   font-weight: 600;
   margin-top: 60px;
   margin-bottom: 20px;
 }
+<<<<<<< HEAD
 
 // paragraphc rules
 .page-description
@@ -229,3 +272,62 @@ header {
 
 }
 
+=======
+
+// paragraphc rules
+.page-description {
+  font-size: $exo-regular;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+#grid-stack {
+  display: flex;
+  flex-direction: column;
+  margin-top: 130px;
+}
+
+// =========== infantry page ==========
+.insect-grid {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  .insect-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 450px;
+    height: 450px;
+    padding: 20px;
+    margin-right: 30px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      border-radius: 4px;;
+  }
+
+  .insect-image img {
+    cursor: pointer;
+    width: 200px;
+    // transition: opacity .25s ease;
+    transition: all 0.2 ease-in-out;
+  }
+
+  .insect-image img:hover {
+    // opacity: .6;
+    transform: scale(1.1);
+  }
+}
+
+// ===========footer ===========
+
+footer
+{
+  display: flex;
+  margin-top: 200px;
+}
+>>>>>>> 2854663de59e45a35a55aafe27cd477f8bffc863
