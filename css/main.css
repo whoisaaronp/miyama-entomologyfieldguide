@@ -1,35 +1,42 @@
-.hidden {
-  display: none; }
+/*
+Error: Invalid CSS after "...ubheader: 1.5vw": expected "{", was "; "
+        on line 26 of /Users/juniha/Desktop/_FANSHAWE/De Luca/Semester 4/MMED - 5009 Experiential Design 2/miyama-entomologyfieldguide/sass/main.scss
 
-/* variables */
-/* import the muffins*/
-/* h1*/
-h1 {
-  color: teal; }
+21: 
+22: // Sass Variables
+23: $landing-page-text: 4vw;
+24: $exo-header: 4vw;
+25: <<<<<<< HEAD
+26: $exo-subheader: 1.5vw; 
+27: =======
+28: $exo-subheader: 1.5vw;
+29: >>>>>>> 2854663de59e45a35a55aafe27cd477f8bffc863
+30: $exo-regular: 1vw;
+31: 
 
-/* h2*/
-h2 {
-  color: #c00022; }
-
-/* h3*/
-h3 {
-  color: #fff3f5; }
-
-h4 {
-  -webkit-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg); }
-
-#main-header {
-  height: 200px;
-  background-color: teal;
-  /* nesting logo color*/ }
-  #main-header #logo {
-    width: 320px;
-    height: 20px;
-    background-color: pink;
-    -webkit-transform: rotate(10deg);
-    -ms-transform: rotate(10deg);
-    transform: rotate(10deg); }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+/Users/juniha/Desktop/_FANSHAWE/De Luca/Semester 4/MMED - 5009 Experiential Design 2/miyama-entomologyfieldguide/sass/main.scss:26
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ubheader: 1.5vw\": expected \"{\", was \"; \"\A         on line 26 of /Users/juniha/Desktop/_FANSHAWE/De Luca/Semester 4/MMED - 5009 Experiential Design 2/miyama-entomologyfieldguide/sass/main.scss\A \A 21: \A 22: // Sass Variables\A 23: $landing-page-text: 4vw;\A 24: $exo-header: 4vw;\A 25: <<<<<<< HEAD\A 26: $exo-subheader: 1.5vw; \A 27: =======\A 28: $exo-subheader: 1.5vw;\A 29: >>>>>>> 2854663de59e45a35a55aafe27cd477f8bffc863\A 30: $exo-regular: 1vw;\A 31: "; }
