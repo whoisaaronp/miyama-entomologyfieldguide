@@ -3,11 +3,11 @@
 
 (function () {
     
-    gsap .registerPlugin(ScrollTigger);
+    gsap.registerPlugin(ScrollTrigger);
     "use strict"
-    
-    gsap.to("#vertical", 1, {delay: .5, y:600, ease:Power2.easeOut});
-    console.log("fired");
+    // stag-beetle landing page
+    gsap.from("#vertical", 1, {autoAlpha: 0, delay: 0.5, y:800, ease:Expo.easeOut});
+    gsap.from("#delay-button", 1, {autoAlpha: 0, delay: 0.8, y:800, ease:Expo.easeOut});
+    // console.log("fired");
 
-    
-});
+})();

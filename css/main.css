@@ -21,6 +21,13 @@ header {
   align-items: center;
   margin: 0 auto; }
 
+#background-forest {
+  background-image: url(../images/zbynek-skrceny-background-unsplash.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; }
+
 #explore-landing-page-header {
   width: 90%;
   font-size: 4vw;
@@ -206,12 +213,22 @@ header {
   .insect-grid .insect-image img {
     cursor: pointer;
     width: 200px;
-    transition: all 0.2 ease-in-out; }
+    height: auto;
+    transition: transform all 300ms ease-in-out;
+    -ms-transition: transform all 300ms ease-in-out;
+    -webkit-transition: transform all 300ms ease-in-out; }
   .insect-grid .insect-image img:hover {
-    transform: scale(1.1); }
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */ }
 
 .dim-image {
   opacity: 0.333; }
+
+#vertical {
+  overflow-y: hidden; }
 
 footer {
   display: flex;

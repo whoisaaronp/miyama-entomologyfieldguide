@@ -35,6 +35,14 @@ header {
   margin: 0 auto;
 }
 
+#background-forest {
+  background-image: url(../images/zbynek-skrceny-background-unsplash.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
 // introduction text size
 #explore-landing-page-header {
   width: 90%;
@@ -74,6 +82,8 @@ header {
   transition: transform 0.3s ease-in;
 }
 
+// my underlined list in nav links needs to have a display of 
+// none in js i need to toggle the display property
 .nav-links li a {
   text-transform: uppercase;
   color: black;
@@ -257,19 +267,29 @@ header {
   .insect-image img {
     cursor: pointer;
     width: 200px;
-    // transition: opacity .25s ease;
-    transition: all 0.2 ease-in-out;
+    height: auto;
+    transition: transform all 300ms ease-in-out;
+    -ms-transition: transform all 300ms ease-in-out;
+    -webkit-transition: transform all 300ms ease-in-out;
   }
 
   .insect-image img:hover {
     // opacity: .6;
-    transform: scale(1.1);
+    transform: scale(1.2);
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
   }
 }
 
 // grayscale selected images
-.dim-image{
+.dim-image {
   opacity: 0.333;
+}
+
+#vertical
+{
+  // opacity: 1;
+  overflow-y: hidden;
 }
 
 // ===========footer ===========
