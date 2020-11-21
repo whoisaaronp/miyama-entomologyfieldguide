@@ -22,7 +22,7 @@ body {
 // Sass Variables
 $landing-page-text: 4vw;
 $exo-header: 4vw;
-$exo-subheader: 2vw; 
+$exo-subheader: 1.5vw; 
 $exo-regular: 1vw;
 
 header {
@@ -52,7 +52,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
+
 .nav-links {
   display: flex;
   flex-direction: column;
@@ -66,6 +68,7 @@ header {
   background-color: rgba(155, 155, 155, 0.459);
   transform: translateX(100%);
   transition: transform 0.3s ease-in;
+
 }
 
 .nav-links li a {
@@ -73,9 +76,9 @@ header {
   color:black;
   font-size: 4rem;
   font-weight: $exo-header;
-  text-decoration: none;
- 
+  text-decoration: none; 
 }
+
 .nav-links li {
   opacity: 0px;
 
@@ -175,7 +178,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 .page-title{
@@ -184,12 +187,45 @@ header {
   font-weight: 600;
   margin-top: 60px;
   margin-bottom: 20px;
-
-  .page-description
-  {
-    font-size: $exo-subheader;
-    margin-top: 20px;
-    background-color: red;
-    
-  }
 }
+
+// paragraphc rules
+.page-description
+{
+  font-size: $exo-regular;
+  margin-top: 20px;
+  font-weight: 400;
+  
+}
+
+.insect-library{
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 100px;
+	background-color: pink;	
+	margin: 0 auto;
+
+	#image-row
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.insect-content{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.insect-image img
+	{
+		width: 50%;
+		height: 70%;
+		padding: 20px;
+		background-color: green;
+	}
+
+}
+
