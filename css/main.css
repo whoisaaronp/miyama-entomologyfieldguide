@@ -10,8 +10,12 @@
 *:after {
   box-sizing: border-box; }
 
+html {
+  overflow-x: hidden; }
+
 body {
-  font-family: "Exo", sans-serif; }
+  font-family: "Exo", sans-serif;
+  overflow-x: hidden; }
 
 header {
   width: 90%;
@@ -20,6 +24,13 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto; }
+
+#background-forest {
+  background-image: url(../images/zbynek-skrceny-background-unsplash.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 100vh; }
 
 #explore-landing-page-header {
   width: 90%;
@@ -33,11 +44,15 @@ header {
   list-style: none; }
 
 .hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   align-items: center; }
 
 .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -67,6 +82,8 @@ header {
     height: 100vh;
     width: 100%;
     padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,6 +95,8 @@ header {
     height: auto; }
 
 .introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,6 +104,8 @@ header {
   margin-top: 15%; }
 
 #introduction-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   margin-top: 80px; }
@@ -136,6 +157,28 @@ header {
   flex-direction: column;
   align-items: center;
   margin: 0 auto; }
+  .page-title-container from {
+    opacity: 0;
+    -o-transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px); }
+  .page-title-container to {
+    opacity: 1px;
+    -o-transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0px); }
+
+.page-title-container {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; }
 
 .page-title {
   font-size: 4vw;
@@ -148,25 +191,52 @@ header {
   margin-top: 20px;
   font-weight: 400; }
 
-.insect-library {
-  width: 90%;
+#grid-stack {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
-  background-color: pink;
+  margin-top: 130px; }
+
+.insect-grid {
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto; }
-  .insect-library #image-row {
+  .insect-grid .insect-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row; }
-  .insect-library .insect-content {
-    width: 100%;
-    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center; }
-  .insect-library .insect-image img {
-    width: 50%;
-    height: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 450px;
+    height: 450px;
     padding: 20px;
-    background-color: green; }
+    margin-right: 30px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    transition: all .2s; }
+  .insect-grid .insect-image img {
+    cursor: pointer;
+    width: 200px;
+    height: auto;
+    transition: transform 300ms ease-in-out;
+    -ms-transition: transform 300ms ease-in-out;
+    -webkit-transition: transform 300ms ease-in-out; }
+  .insect-grid .insect-image img:hover {
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */ }
+
+.dim-image {
+  opacity: 0.333; }
+
+#vertical {
+  overflow-y: hidden; }
+
+footer {
+  display: flex;
+  margin-top: 200px; }
 
 /*# sourceMappingURL=main.css.map */
