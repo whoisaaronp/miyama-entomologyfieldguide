@@ -37,8 +37,8 @@ header {
 
 #background-forest {
   background-image: url(../images/zbynek-skrceny-background-unsplash.jpg);
-  background-size: contain;
-  background-position: center;
+  background-size: cover;
+  background-position: top center;
   background-repeat: no-repeat;
   height: 100vh;
 }
@@ -82,8 +82,6 @@ header {
   transition: transform 0.3s ease-in;
 }
 
-// my underlined list in nav links needs to have a display of 
-// none in js i need to toggle the display property
 .nav-links li a {
   text-transform: uppercase;
   color: black;
