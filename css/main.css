@@ -34,7 +34,8 @@ header {
 
 #explore-landing-page-header {
   width: 90%;
-  font-size: 4vw;
+  font-size: 5vw;
+  font-weight: 900;
   text-align: center;
   line-height: normal; }
 
@@ -105,8 +106,7 @@ header {
   width: 375px;
   height: 65px;
   border-style: none;
-  border: 2px solid #444;
-  background-color: white; }
+  border: 2px solid #444; }
 
 #introduction-button {
   display: flex;
@@ -173,7 +173,7 @@ header {
 
 .page-title {
   font-size: 4vw;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 60px;
   margin-bottom: 20px; }
 
@@ -235,6 +235,35 @@ header {
 
 #delay-button {
   overflow-y: hidden; }
+
+#button-menus-container {
+  display: flex;
+  width: 90%;
+  height: 750px;
+  margin: 0 auto; }
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 225px;
+  height: 600px; }
+
+.back-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid #444;
+  margin-bottom: 100px; }
+
+.button-stack {
+  text-transform: uppercase;
+  padding: 25px;
+  width: 220px;
+  height: 70px;
+  border: 2px solid #444;
+  margin-bottom: 50px;
+  background-color: none; }
 
 footer {
   display: -webkit-box;
