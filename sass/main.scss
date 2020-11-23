@@ -138,6 +138,7 @@ header {
   height: 65px;
   border-style: none;
   border: 2px solid #444;
+  background-color: transparent;
 }
 
 #introduction-button {
@@ -312,6 +313,7 @@ header {
 }
 
 .back-button {
+  cursor: pointer;
   width: 50px;
   height: 50px;
   border-radius: 50px;
@@ -320,13 +322,14 @@ header {
 }
 
 .button-stack {
+  cursor: pointer;
   text-transform: uppercase;
   padding: 25px;
   width: 220px;
   height: 70px;
   border: 2px solid #444;
   margin-bottom: 50px;
-  background-color: none;
+  background-color: transparent;
 }
 // ========== footer ========
 // ==========================
