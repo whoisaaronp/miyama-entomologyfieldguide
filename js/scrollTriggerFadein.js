@@ -22,7 +22,8 @@
           trigger: section,
           start: 'top 60%',
           end: 'bottom 30%',
-          markers: true,
+          // remove the markers from your file
+          markers: false,
           onEnter: () => gsap.to(elems, {
             y: 0,
             opacity: 1,
