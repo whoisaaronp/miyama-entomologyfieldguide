@@ -27,7 +27,7 @@ body {
 // Sass Variables
 $landing-page-text: 4vw;
 $exo-header: 4vw;
-$exo-subheader: 1.5vw;
+$exo-subheader: 1.5vw; 
 $exo-regular: 1vw;
 
 header {
@@ -67,6 +67,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .nav-links {
@@ -84,6 +85,7 @@ header {
   background-color: rgba(155, 155, 155, 0.459);
   transform: translateX(100%);
   transition: transform 0.3s ease-in;
+
 }
 
 .nav-links li a {
@@ -231,6 +233,7 @@ header {
 }
 
 // paragraphc rules
+
 .page-description {
   font-size: $exo-regular;
   margin-top: 20px;
