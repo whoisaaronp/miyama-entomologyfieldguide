@@ -78,8 +78,6 @@ header {
 .nav-links li {
   opacity: 0px; }
 
-#intro-logo-container {
-  /* nesting logo color*/ }
   #intro-logo-container #logo-content {
     height: 100vh;
     width: 100%;
