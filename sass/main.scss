@@ -351,7 +351,7 @@ nav {
 #button-menus-container {
   display: flex;
   width: 90%;
-  height: 550px;
+  height: 700px;
   padding: 10px;
   margin: 0 auto;
 }
@@ -404,6 +404,35 @@ nav {
 
 .hover-circle {
   transition: all 300ms;
+}
+
+// ====== model viewer ====
+
+.threemodel
+{
+
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  margin-left: 20px;
+}
+
+model-viewer {
+  max-width: 100%;
+  width: auto;
+  height: 700px;
+  background-color: #efefef67;
+  z-index: 2;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.right-side-space
+{
+  width: 15%;
+  margin-left: 20px;
+  height: auto;
+  border: 2px solid lawngreen;
 }
 
 // ==========================
