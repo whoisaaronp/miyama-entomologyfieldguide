@@ -75,7 +75,7 @@ nav {
   text-transform: uppercase;
   color: black;
   font-size: 4rem;
-  font-weight: 4vw;
+  font-weight: 700;
   text-decoration: none; }
 
 .nav-links li {
@@ -295,11 +295,11 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 50px;
-  border: 1px solid #444;
-  margin-bottom: 100px;
+  background-color: white;
+  margin-bottom: 80px;
   z-index: -1; }
 
 .back-button img {
@@ -311,6 +311,7 @@ nav {
 
 .button-stack {
   cursor: pointer;
+  font-size: 0.9em;
   text-transform: uppercase;
   padding: 25px;
   width: 220px;
