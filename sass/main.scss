@@ -282,6 +282,55 @@ header {
   /* Safari 3-8 */
 }
 
+// image description
+.image-wrap {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+
+}
+
+.image-description {
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  overflow: hidden;
+  position: absolute;
+  padding: 20px;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // background: rgb(255,255,255);
+  // background: -moz-linear-gradient(180deg, rgba(255,255,255,0.2763480392156863) 61%, rgba(0,0,0,1) 100%);
+  // background: -webkit-linear-gradient(180deg, rgba(255,255,255,0.2763480392156863) 61%, rgba(0,0,0,1) 100%);
+  // background: linear-gradient(180deg, rgba(255,255,255,0.2763480392156863) 61%, rgba(0,0,0,1) 100%);
+  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
+  visibility: hidden;
+  opacity: 0;
+
+  // transition slide in
+  transform: translate(0%, 10%, ease-in);
+  -ms-transform: translate(0%, 10%, ease-in);
+  transition: opacity .2s visibility .2s;
+
+
+}
+
+// description hover 
+.image-wrap:hover .image-description{
+  visibility: visible;
+  opacity: 1;
+}
+
+.scientific-description
+{
+  display: inline;
+  list-style: none;
+  text-decoration: none;
+}
+
 .dim-image {
   opacity: 0.333;
 }
@@ -324,10 +373,9 @@ header {
   z-index: -1;
 }
 
-.back-button img
-{
+.back-button img {
   width: 8px;
-  height: 8px
+  height: 8px;
 }
 
 .back-button:hover {

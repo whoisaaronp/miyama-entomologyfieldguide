@@ -228,6 +228,38 @@ header {
   -webkit-transform: scale(1.2);
   /* Safari 3-8 */ }
 
+.image-wrap {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  overflow: hidden; }
+
+.image-description {
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  overflow: hidden;
+  position: absolute;
+  padding: 20px;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(0%, 10%, ease-in);
+  -ms-transform: translate(0%, 10%, ease-in);
+  transition: opacity .2s visibility .2s; }
+
+.image-wrap:hover .image-description {
+  visibility: visible;
+  opacity: 1; }
+
+.scientific-description {
+  display: inline;
+  list-style: none;
+  text-decoration: none; }
+
 .dim-image {
   opacity: 0.333; }
 
