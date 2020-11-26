@@ -38,6 +38,7 @@ header {
   margin: 0 auto;
 }
 
+// thanks unsplash, zbynek skrceny for the photo
 #background-forest {
   background-image: url(../images/zbynek-skrceny-background-unsplash.jpg);
   background-size: cover;
@@ -112,6 +113,7 @@ nav {
     width: 100%;
     padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     resize: both;
@@ -158,6 +160,7 @@ nav {
 
 .library-button {
   cursor: pointer;
+  text-transform: uppercase;
   font-size: 18px;
 }
 
@@ -422,7 +425,7 @@ model-viewer {
   width: auto;
   height: 700px;
   background-color: #efefef67;
-  z-index: 2;
+  z-index: 0;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -435,6 +438,32 @@ model-viewer {
   border: 2px solid lawngreen;
 }
 
+#start-button
+{
+  cursor: pointer;
+  margin-top: 90px;
+}
+
+#start-button button
+{
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 20px;
+  width: 375px;
+  height: 65px;
+  border-style: none;
+  border: 2px solid #444;
+  background-color: transparent;
+}
+
+// full screen of bugs
+#insect-fullscreen {
+  background-image: url(../images/insect-fullscreen.jpeg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 // ==========================
 // ==========================
 // ========== Footer ========
