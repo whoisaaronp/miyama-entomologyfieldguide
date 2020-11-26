@@ -60,7 +60,7 @@ header {
   top: 0vh;
   right: 0px;
   height: 100vh;
-  background-color: rgba(155, 155, 155, 0.459);
+  background-color: #969696;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
   -webkit-transition: -webkit-transform 0.3s ease-in;
@@ -78,6 +78,8 @@ header {
 .nav-links li {
   opacity: 0px; }
 
+#intro-logo-container {
+  /* nesting logo color*/ }
   #intro-logo-container #logo-content {
     height: 100vh;
     width: 100%;
@@ -251,11 +253,19 @@ header {
 
 .back-button {
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   border-radius: 50px;
   border: 2px solid #444;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  z-index: -1; }
+
+.back-button img {
+  width: 8px;
+  height: 8px; }
 
 .back-button:hover {
   transform: scale(1.1); }
