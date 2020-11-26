@@ -55,6 +55,10 @@ header {
   line-height: normal;
 }
 
+nav {
+  z-index: 1;
+}
+
 .nav-links li {
   display: inline;
   padding: 0px 20px;
@@ -340,7 +344,7 @@ header {
 }
 
 #delay-button {
-  overflow-y: hidden;
+  overflow: visible;
 }
 
 // to against the menu wrapper
@@ -365,17 +369,18 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   border-radius: 50px;
-  border: 2px solid #444;
+  // background-color: rgba(156, 156, 156, 0.486);
+  border: 1px solid #444;
   margin-bottom: 100px;
   z-index: -1;
 }
 
 .back-button img {
-  width: 8px;
-  height: 8px;
+  width: 15px;
+  height: 15px;
 }
 
 .back-button:hover {

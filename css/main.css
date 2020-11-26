@@ -39,6 +39,9 @@ header {
   text-align: center;
   line-height: normal; }
 
+nav {
+  z-index: 1; }
+
 .nav-links li {
   display: inline;
   padding: 0px 20px;
@@ -271,7 +274,7 @@ header {
   overflow-y: hidden; }
 
 #delay-button {
-  overflow-y: hidden; }
+  overflow: visible; }
 
 #button-menus-container {
   display: flex;
@@ -292,16 +295,16 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   border-radius: 50px;
-  border: 2px solid #444;
+  border: 1px solid #444;
   margin-bottom: 100px;
   z-index: -1; }
 
 .back-button img {
-  width: 8px;
-  height: 8px; }
+  width: 15px;
+  height: 15px; }
 
 .back-button:hover {
   transform: scale(1.1); }
