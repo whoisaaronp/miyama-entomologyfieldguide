@@ -235,24 +235,28 @@ header {
   overflow: hidden; }
 
 .image-description {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   overflow: hidden;
   position: absolute;
-  padding: 20px;
-  top: 10px;
+  padding: 40px;
+  top: 340px;
   bottom: 0;
   left: 0;
   right: 0;
   visibility: hidden;
   opacity: 0;
-  transform: translate(0%, 10%, ease-in);
-  -ms-transform: translate(0%, 10%, ease-in);
-  transition: opacity .2s visibility .2s; }
+  transform: translate(0%, 10%);
+  -ms-transform: translate(0%, 10%);
+  transition: opacity .2s visibility .2s ease; }
+
+.image-description p:nth-child(2) {
+  font-size: 12px; }
 
 .image-wrap:hover .image-description {
   visibility: visible;
+  height: 10%;
   opacity: 1; }
 
 .scientific-description {

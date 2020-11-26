@@ -291,36 +291,36 @@ header {
 
 }
 
+// image description p
 .image-description {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   overflow: hidden;
   position: absolute;
-  padding: 20px;
-  top: 10px;
+  padding: 40px;
+  top: 340px;
   bottom: 0;
   left: 0;
   right: 0;
-  // background: rgb(255,255,255);
-  // background: -moz-linear-gradient(180deg, rgba(255,255,255,0.2763480392156863) 61%, rgba(0,0,0,1) 100%);
-  // background: -webkit-linear-gradient(180deg, rgba(255,255,255,0.2763480392156863) 61%, rgba(0,0,0,1) 100%);
-  // background: linear-gradient(180deg, rgba(255,255,255,0.2763480392156863) 61%, rgba(0,0,0,1) 100%);
-  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
   visibility: hidden;
   opacity: 0;
 
   // transition slide in
-  transform: translate(0%, 10%, ease-in);
-  -ms-transform: translate(0%, 10%, ease-in);
-  transition: opacity .2s visibility .2s;
+  transform: translate(0%, 10%);
+  -ms-transform: translate(0%, 10%);
+  transition: opacity .2s visibility .2s ease;
+}
 
-
+.image-description p:nth-child(2)
+{
+  font-size: 12px;
 }
 
 // description hover 
 .image-wrap:hover .image-description{
   visibility: visible;
+  height: 10%;
   opacity: 1;
 }
 
