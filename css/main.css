@@ -350,7 +350,8 @@ model-viewer {
   width: 15%;
   margin-left: 20px;
   height: auto;
-  border: 2px solid lawngreen; }
+  padding: 20px;
+  background-color: white; }
 
 #start-button {
   cursor: pointer;
@@ -406,12 +407,12 @@ canvas {
   left: 520px; }
 
 #dot1 {
-  top: 320px;
-  right: -50px; }
+  top: 30px;
+  right: 490px; }
 
 #dot2 {
-  top: 500px;
-  right: -200px; }
+  top: 370px;
+  right: 450px; }
 
 #videoPlayer {
   max-width: 100%;
