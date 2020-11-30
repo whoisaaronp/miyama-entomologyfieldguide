@@ -16,7 +16,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.js"></script>
 </head>
 
-<body id="background-forest">
+<body>
 	<main>
 		<!-- 1. background image -->
 			<header>
@@ -40,41 +40,22 @@
 				</nav>
 			</header>
 			<!-- video -->
-			<section id="button-menus-container">
-				<!-- menu wrapper -->
-				<div class="menu-button-left-side" id="delay-button">
-					<a href="local-infantry.html"><div class="back-button hover-circle">
-						<!-- backbutton icon -->
-						<img src="images/close-button.png" alt="close-section-icon">
-					</div></a>
-					<h2 class="hidden">Left Menu</h2>
-					<!-- button wrapper -->
-					<section class="button-wrapper">
-						<a href="insects-details-page.html"><button id="explodeinsect" class="button-stack">insect body</button></a>
-						<a href="3dmodel.html"><button id="explodeinsect" class="button-stack">3D model</button></a>
-						<a href="matingvideo.html"><button class="button-stack">mating</button></a>
-						<!-- Scan for the VR experience -->
-						<a href="arexperience.html"><button id="arinsect" class="button-stack">take one home</button></a>
-					</section>
-				</div>
-				<section class="ar-experience">
-					<a href="">
-						<img src="" alt="AR object of the Miyama Stag Beetle">
-					</a>
-				</section>
-				<section class="right-side-space">
-					<!-- empty -->
-				</section>
-			</section>
-			<!-- something here -->
-	</main>
+			<section id="data-container">
+							<!-- menu wrapper -->
+							<div class="menu-button-left-side">
+								<a href="local-infantry.html"><div class="back-button hover-circle">
+									<!-- backbutton icon -->
+									<img src="images/close-button.png" alt="close-section-icon">
+								</div></a>
+							</div>
 
-	<!-- Import the model viewer component -->
-	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-	<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+			</section>
+	</main>
 	<script src="js/scrollTrigger.js"></script>
 	<!-- main js -->
 	<script src="js/main.js"></script>
+	<script src="js/interact.js"></script>
+	<script src="js/explodeKnob.js"></script>
 </body>
 
 </html>

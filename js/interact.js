@@ -8,6 +8,7 @@
     let dot2 = document.querySelector("#dot2");
     let content = document.querySelector(".right-side-space");
 
+    // inject text into this
     function addContent1() {
         content.innerHTML = `
         <h2 style="font-size: 24px; 
@@ -17,7 +18,7 @@
     </p>
     `
     }
-
+    // inject text into this
     function addContent2() {
         content.innerHTML = `<h2 style="font-size: 24px; 
         font-weight:800; margin-bottom: 15px;">Mandibles</h2>
@@ -25,6 +26,7 @@
     The head of the male has enlarged jaws or mandibles. These are used for fighting with other males, for attracting a mate, and for holding the mate still during mating. The stag beetle also uses his jaws to protect himself if he feels threatened.</p>
     `
     }
+    // inject text into this
 
     function addContent3() {
         content.innerHTML = `<h2 style="font-size: 24px; 
