@@ -58,8 +58,8 @@
 							<button id="explodeinsect" class="button-stack">3D model</button>
 						</a>
 						<!-- videoplayer -->
-						<a href="lifecyclevideo.html">
-							<button class="button-stack">life cycle</button>
+						<a href="matingvideo.html">
+							<button class="button-stack">mating</button>
 						</a>
 						<!-- Scan for the VR experience -->
 						<a href="arexperience.html">
@@ -68,6 +68,10 @@
 					</section>
 				</div>
 				<section class="threemodel">
+					<h2 class="hidden">Explode View</h2>
+					<div class="stag-male-dimension">
+						<h3> Male Miyama Stag Beetle: 3.5 to 7.5cm in length</h3>
+					</div>
 					<canvas id="explode-view"><!-- explode image here --></canvas>
 					<input type="range" min="0" max="100" value="0" id="slider-knob">
 					<!-- dot markers -->
@@ -75,15 +79,34 @@
 					<div class="dot" id="dot1" data-box="1"></div>
 					<div class="dot" id="dot2" data-box="2"></div>
 				</section>
+				<!-- feature inputs would be shown here -->
 				<section class="right-side-space">
-					<!-- empty -->
+					<h2 class="hidden">Insect feature panel</h2>
+					<section id="info0" class="info-styling">
+						<!-- <h2>Head</h2>
+						<p>
+							The head of the male has enlarged jaws or mandibles. These are used for fighting with other males, for attracting a mate, and for holding the mate still during mating. The stag beetle also uses his jaws to protect himself if he feels threatened.
+						</p> -->
+					</section>
+					<section id="info1" class="info-styling">
+						<!-- <h2>Mandibles</h2>
+						<p>
+							Shiny(middle section) and their wing cases are chestnut brown. The thorax is joined on to the head and has the three pairs of legs attached. All insects have 3 pairs of legs joined to the thorax. At the end of their legs, stag beetles have little hooks to help them grip on to things.
+						</p> -->
+					</section>
+					<section id="info2" class="info-styling">
+						<!-- <h2>Abdomen</h2>
+						<p>
+							Food is digested here. The beetle's reproducitive organs are also located in the abdomen.
+						</p> -->
+					</section>
 				</section>
 			</section>
-			<!-- something here -->
 	</main>
 	<script src="js/scrollTrigger.js"></script>
 	<!-- main js -->
 	<script src="js/main.js"></script>
+	<script src="js/interact.js"></script>
 	<script src="js/explodeKnob.js"></script>
 </body>
 
