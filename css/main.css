@@ -403,8 +403,8 @@ canvas {
   100% {
     box-shadow: 0 0 15px #e4e1e2; } }
 #dot0 {
-  bottom: 285px;
-  left: 520px; }
+  left: 520px;
+  bottom: 485px; }
 
 #dot1 {
   top: 30px;
@@ -413,6 +413,22 @@ canvas {
 #dot2 {
   top: 370px;
   right: 450px; }
+
+.info-styling {
+  position: absolute;
+  width: 200px;
+  height: 420px;
+  padding: 20px;
+  border-radius: 4px; }
+
+.info-styling h2 {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 15px; }
+
+.info-styling p {
+  line-height: 1.5em;
+  margin-bottom: 10px; }
 
 #videoPlayer {
   max-width: 100%;
