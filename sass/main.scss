@@ -498,8 +498,8 @@ canvas {
 }
 
 #dot0 {
-  left: 540px;
-  bottom: 255px;
+  left: 544px;
+  bottom: 305px;
 }
 // mandibles
 #dot1 {
@@ -551,12 +551,14 @@ canvas {
   height: 100%;
 }
 
-.stag-male-dimension
-{
+.stag-male-dimension {
   position: absolute;
   font-size: 12px;
-  top: 550px;
+  top: 530px;
   left: 60px;
+  h3 {
+    margin-bottom: 10px;
+  }
 }
 
 // AR version

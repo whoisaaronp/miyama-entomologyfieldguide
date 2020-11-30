@@ -403,8 +403,8 @@ canvas {
   100% {
     box-shadow: 0 0 15px #e4e1e2; } }
 #dot0 {
-  left: 540px;
-  bottom: 255px; }
+  left: 544px;
+  bottom: 305px; }
 
 #dot1 {
   top: 60px;
@@ -448,8 +448,10 @@ canvas {
 .stag-male-dimension {
   position: absolute;
   font-size: 12px;
-  top: 550px;
+  top: 530px;
   left: 60px; }
+  .stag-male-dimension h3 {
+    margin-bottom: 10px; }
 
 footer {
   display: flex;

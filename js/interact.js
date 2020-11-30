@@ -13,7 +13,7 @@
         <h2 style="font-size: 24px; 
         font-weight:800; margin-bottom: 15px;">Thorax</h2>
     <p style="line-height: 1.5em; margin-bottom: 10px;">
-    The thorax is segmented into the two discernible parts, the pro- and pterothorax. The pterothorax is the fused meso- and metathorax, which are commonly separated in other insect species, although flexibly articulate from the prothorax. Shiny(middle section) and their wing cases are red chestnut brown. The thorax is attached head and has the three pairs of legs attached. All insects have 3 pairs of legs joined to the thorax. At the end of their legs, stag beetles have little hooks to help them grip on to things.
+    The thorax is segmented into the two discernible parts, the prothorox and pterothorax. The pterothorax is the fused meso- and metathorax, which are commonly separated in other insect species, although flexibly articulate from the prothorax.</p><p style="line-height: 1.5em; margin-bottom: 10px;">It's shiny(middle section) and their wing cases are red chestnut brown. The thorax is attached head and has the three pairs of legs attached. All insects have 3 pairs of legs joined to the thorax. At the end of their legs, stag beetles have little hooks to help them grip on to things.
     </p>
     `
     }
