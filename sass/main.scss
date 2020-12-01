@@ -498,8 +498,8 @@ canvas {
 }
 
 #dot0 {
-  left: 540px;
-  bottom: 255px;
+  left: 544px;
+  bottom: 305px;
 }
 // mandibles
 #dot1 {
@@ -529,7 +529,7 @@ canvas {
 }
 
 .info-styling p {
-  line-height: 1.5em;
+  line-height: 1.5;
   margin-bottom: 10px;
 }
 
@@ -551,15 +551,54 @@ canvas {
   height: 100%;
 }
 
-.stag-male-dimension
-{
+.stag-male-dimension {
+  width: 170px;
+  height: initial;
   position: absolute;
   font-size: 12px;
-  top: 550px;
+  line-height: 1.6;
+  top: 530px;
   left: 60px;
 }
 
 // AR version
+
+// data scrolling
+
+#data-container {
+  display: flex;
+  width: 90%;
+  height: 70px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+// container
+.bionomics {
+  display: flex;
+  width: 90%;
+  height: auto;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.bionomics-title-container
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.bionomics-title-container h3
+{
+  font-size: $exo-header;
+  font-weight: 700;
+}
+    .bionomics-title-container p{
+      margin-top: 20px;
+      line-height: 1.5;
+      width: 500px;
+    }
 
 // ==========================
 // ==========================

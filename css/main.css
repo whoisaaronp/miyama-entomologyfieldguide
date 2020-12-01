@@ -403,8 +403,8 @@ canvas {
   100% {
     box-shadow: 0 0 15px #e4e1e2; } }
 #dot0 {
-  left: 540px;
-  bottom: 255px; }
+  left: 544px;
+  bottom: 305px; }
 
 #dot1 {
   top: 60px;
@@ -427,7 +427,7 @@ canvas {
   margin-bottom: 15px; }
 
 .info-styling p {
-  line-height: 1.5em;
+  line-height: 1.5;
   margin-bottom: 10px; }
 
 #videoPlayer {
@@ -446,10 +446,41 @@ canvas {
   height: 100%; }
 
 .stag-male-dimension {
+  width: 170px;
+  height: initial;
   position: absolute;
   font-size: 12px;
-  top: 550px;
+  line-height: 1.6;
+  top: 530px;
   left: 60px; }
+
+#data-container {
+  display: flex;
+  width: 90%;
+  height: 70px;
+  padding: 10px;
+  margin: 0 auto; }
+
+.bionomics {
+  display: flex;
+  width: 90%;
+  height: auto;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 100px; }
+
+.bionomics-title-container {
+  display: flex;
+  flex-direction: column; }
+
+.bionomics-title-container h3 {
+  font-size: 4vw;
+  font-weight: 700; }
+
+.bionomics-title-container p {
+  margin-top: 20px;
+  line-height: 1.5;
+  width: 500px; }
 
 footer {
   display: flex;

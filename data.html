@@ -9,8 +9,8 @@
 	<link rel="stylesheet" href="css/hamburger.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;400;600;800&display=swap" rel="stylesheet" />
 	<link href="css/reset.css" rel="stylesheet" type="text/css" />
-  <link href="css/main.css" rel="stylesheet" type="text/css" />
-  	<!-- scrollMagic -->
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<!-- scrollMagic -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.js"></script>
@@ -18,6 +18,7 @@
 
 <body>
 	<main>
+		<!-- 1. background image -->
 		<header>
 			<div class="logo-container">
 				<h1 class="hidden">Site Logo</h1>
@@ -27,7 +28,7 @@
 			<nav>
 				<ul class="nav-links">
 					<li class="nav-link"><a href="index.html">home</a></li>
-					<li class="nav-link"><a href="lifecycle.html">the life cycle</a></li>
+					<li class="nav-link"><a href="lifecyle.html">the life cycle</a></li>
 					<li class="nav-link"><a href="data.html">data research</a></li>
 					<li class="nav-link"><a href="#">about us</a></li>
 				</ul>
@@ -39,27 +40,34 @@
 				</button>
 			</nav>
 		</header>
-		<!-- 1. content -->
-		<section class="page-title-container">
-			<h2 class="hidden">Stag Beetle Life Cycle</h2>
-			<!-- Title and subheader -->
-			<section class="page-title">
-				<h2>Stag Beetle Life Cycle</h2>
-			</section>
-			<p class="page-description">
-				Learn about the day in a very short life of a male stag beetle 
-			</p>
+		<!-- video -->
+		<section id="data-container">
+			<h2 class="hidden">Data Research Analysis</h2>
+			<!-- menu wrapper -->
+			<div class="menu-button-left-side">
+				<a href="local-infantry.html">
+					<div class="back-button hover-circle">
+						<!-- backbutton icon -->
+						<img src="images/close-button.png" alt="close-section-icon">
+					</div>
+				</a>
+			</div>
 		</section>
-			<!-- timeline -->
-			<footer>
-				<!-- create some small spacing here -->
-			</footer>
+		<!-- stack here -->
+		<section class="bionomics">
+			<!-- natural habitat -->
+			<h2 class="hidden">Introduction for data</h2>
+			<div class="bionomics-title-container">
+				<h3> Data Research</h3>
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam blanditiis alias minus! Doloremque distinctio maiores ipsam dolorem repudiandae qui culpa.</p>
+			</div>
 		</section>
 	</main>
-	<!-- <script src="js/scrollTrigger.js"></script> -->
-	<script src="js/scrollTriggerFadein.js"></script>
+	<script src="js/scrollTrigger.js"></script>
 	<!-- main js -->
 	<script src="js/main.js"></script>
+	<script src="js/interact.js"></script>
+	<script src="js/explodeKnob.js"></script>
 </body>
 
 </html>
