@@ -39,6 +39,9 @@ header {
   text-align: center;
   line-height: normal; }
 
+nav {
+  z-index: 1; }
+
 .nav-links li {
   display: inline;
   padding: 0px 20px;
@@ -60,7 +63,7 @@ header {
   top: 0vh;
   right: 0px;
   height: 100vh;
-  background-color: rgba(155, 155, 155, 0.459);
+  background-color: #969696;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
   -webkit-transition: -webkit-transform 0.3s ease-in;
@@ -72,7 +75,7 @@ header {
   text-transform: uppercase;
   color: black;
   font-size: 4rem;
-  font-weight: 4vw;
+  font-weight: 700;
   text-decoration: none; }
 
 .nav-links li {
@@ -85,6 +88,7 @@ header {
     width: 100%;
     padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     resize: both;
@@ -121,6 +125,7 @@ header {
 
 .library-button {
   cursor: pointer;
+  text-transform: uppercase;
   font-size: 18px; }
 
 /*  when you click the burger  */
@@ -228,6 +233,42 @@ header {
   -webkit-transform: scale(1.2);
   /* Safari 3-8 */ }
 
+.image-wrap {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  overflow: hidden; }
+
+.image-description {
+  font-size: 1.3em;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+  position: absolute;
+  padding: 40px;
+  top: 340px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(0%, 10%);
+  -ms-transform: translate(0%, 10%);
+  transition: opacity 0.2s visibility 0.2s ease; }
+
+.image-description p:nth-child(2) {
+  font-size: 12px; }
+
+.image-wrap:hover .image-description {
+  visibility: visible;
+  height: 10%;
+  opacity: 1; }
+
+.scientific-description {
+  display: inline;
+  list-style: none;
+  text-decoration: none; }
+
 .dim-image {
   opacity: 0.333; }
 
@@ -235,12 +276,12 @@ header {
   overflow-y: hidden; }
 
 #delay-button {
-  overflow-y: hidden; }
+  overflow: visible; }
 
 #button-menus-container {
   display: flex;
   width: 90%;
-  height: 550px;
+  height: 700px;
   padding: 10px;
   margin: 0 auto; }
 
@@ -253,17 +294,26 @@ header {
 
 .back-button {
   cursor: pointer;
-  width: 30px;
-  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   border-radius: 50px;
-  border: 2px solid #444;
-  margin-bottom: 100px; }
+  background-color: white;
+  margin-bottom: 80px;
+  z-index: -1; }
+
+.back-button img {
+  width: 15px;
+  height: 15px; }
 
 .back-button:hover {
   transform: scale(1.1); }
 
 .button-stack {
   cursor: pointer;
+  font-size: 0.9em;
   text-transform: uppercase;
   padding: 25px;
   width: 220px;
@@ -277,6 +327,172 @@ header {
 
 .hover-circle {
   transition: all 300ms; }
+
+.threemodel {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  margin-left: 20px; }
+
+model-viewer {
+  max-width: 100%;
+  width: auto;
+  height: 700px;
+  background-color: #efefef67;
+  z-index: 0;
+  border-radius: 4px;
+  overflow: hidden; }
+
+.right-side-space {
+  width: 15%;
+  margin-left: 20px;
+  height: auto;
+  padding: 20px;
+  background-color: white; }
+
+#start-button {
+  cursor: pointer;
+  margin-top: 90px; }
+
+#start-button button {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 20px;
+  width: 375px;
+  height: 65px;
+  border-style: none;
+  border: 2px solid #444;
+  background-color: transparent; }
+
+#insect-fullscreen {
+  background-image: url(../images/insect-fullscreen.jpeg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 100vh; }
+
+canvas {
+  max-width: 100%;
+  min-height: 700px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.dot {
+  position: absolute;
+  background-color: #ffffff;
+  border: 2px solid #d4d4d4;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  /* animation */
+  animation-name: glow;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
+
+@keyframes glow {
+  /* start at 0% to end 100% */
+  0% {
+    box-shadow: 0 0 2px rgba(167, 167, 167, 0.7); }
+  100% {
+    box-shadow: 0 0 15px #e4e1e2; } }
+#dot0 {
+  left: 544px;
+  bottom: 305px; }
+
+#dot1 {
+  top: 60px;
+  right: 470px; }
+
+#dot2 {
+  top: 420px;
+  right: 350px; }
+
+.info-styling {
+  position: absolute;
+  width: 200px;
+  height: 420px;
+  padding: 20px;
+  border-radius: 4px; }
+
+.info-styling h2 {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 15px; }
+
+.info-styling p {
+  line-height: 1.5;
+  margin-bottom: 10px; }
+
+#videoPlayer {
+  max-width: 100%;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  background-color: lightgray;
+  overflow: hidden;
+  margin-left: 20px;
+  border-radius: 4px;
+  overflow: hidden; }
+
+#videoPlayer video {
+  width: 100%;
+  height: 100%; }
+
+.stag-male-dimension {
+  width: 170px;
+  height: initial;
+  position: absolute;
+  font-size: 12px;
+  line-height: 1.6;
+  top: 530px;
+  left: 60px; }
+
+#data-container {
+  display: flex;
+  width: 90%;
+  height: 70px;
+  padding: 10px;
+  margin: 0 auto; }
+
+.bionomics {
+  display: flex;
+  width: 90%;
+  height: auto;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 100px; }
+
+.bionomics-title-container {
+  display: flex;
+  flex-direction: column; }
+
+.bionomics-title-container h3 {
+  font-size: 4vw;
+  font-weight: 700; }
+
+.bionomics-title-container p {
+  margin-top: 20px;
+  line-height: 1.5;
+  max-width: 900px; }
+
+.data-story {
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+  background-color: pink; }
+
+.data-story h4 {
+  font-size: 2em; }
+
+.data-story span {
+  font-weight: 600; }
 
 footer {
   display: flex;

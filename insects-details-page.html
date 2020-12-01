@@ -20,7 +20,7 @@
 	<main>
 		<!-- 1. background image -->
 			<header>
-	k				<h1 class="hidden">Site Logo</h1>
+					<h1 class="hidden">Site Logo</h1>
 					<a href="index.html"><img src="images/entomology-institute-logo.svg"
 							alt="Entomology Institute of Canada" /></a>
 				</div>
@@ -43,21 +43,62 @@
 			<section id="button-menus-container">
 				<!-- menu wrapper -->
 				<div class="menu-button-left-side" id="delay-button">
-					<a href="local-infantry.html"><div class="back-button hover-circle"></div></a>
+					<a href="local-infantry.html"><div class="back-button hover-circle">
+						<!-- backbutton icon -->
+						<img src="images/close-button.png" alt="close-section-icon">
+					</div></a>
 					<h2 class="hidden">Left Menu</h2>
 					<!-- button wrapper -->
 					<section class="button-wrapper">
-						<a href="#"><button id="explodeinsect" class="button-stack">insect body</button></a>
-						<a href="#"><button id="explodeinsect" class="button-stack">ar model</button></a>
-						<a href="#"><button id="arinsect" class="button-stack">something else</button></a>
+						<a href="insects-details-page.html">
+							<button id="explodeinsect" class="button-stack">insect body</button>
+						</a>
+						<!-- gltf -->
+						<a href="3dmodel.html">
+							<button id="explodeinsect" class="button-stack">3D model</button>
+						</a>
+						<!-- videoplayer -->
+						<a href="matingvideo.html">
+							<button class="button-stack">mating</button>
+						</a>
+						<!-- Scan for the VR experience -->
+						<a href="arexperience.html">
+							<button id="arinsect" class="button-stack">take one home</button>
+						</a> 
 					</section>
 				</div>
+				<section class="threemodel">
+					<h2 class="hidden">Explode View</h2>
+					<div class="stag-male-dimension">
+						<p>Common Name: Stag Beetle Latin Name: Lucanus Cervus Family: Lucanidae Average length: 3.5 to 7.5cm</p>
+					</div>
+					<canvas id="explode-view"><!-- explode image here --></canvas>
+					<input type="range" min="0" max="100" value="0" id="slider-knob">
+					<!-- dot markers -->
+					<div class="dot" id="dot0" data-box="0"></div>
+					<div class="dot" id="dot1" data-box="1"></div>
+					<div class="dot" id="dot2" data-box="2"></div>
+				</section>
+				<!-- feature inputs would be shown here -->
+				<section class="right-side-space">
+					<h2 class="hidden">Insect feature panel</h2>
+					<section id="info0" class="info-styling">
+							<!-- text -->
+					</section>
+					<section id="info1" class="info-styling">
+						<!-- text -->
+					</section>
+					<section id="info2" class="info-styling">
+						<!-- text -->
+					</section>
+				</section>
 			</section>
-			<!-- something here -->
 	</main>
 	<script src="js/scrollTrigger.js"></script>
 	<!-- main js -->
 	<script src="js/main.js"></script>
+	<script src="js/interact.js"></script>
+	<script src="js/explodeKnob.js"></script>
 </body>
 
 </html>
