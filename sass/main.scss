@@ -529,7 +529,7 @@ canvas {
 }
 
 .info-styling p {
-  line-height: 1.5em;
+  line-height: 1.5;
   margin-bottom: 10px;
 }
 
@@ -552,13 +552,13 @@ canvas {
 }
 
 .stag-male-dimension {
+  width: 170px;
+  height: initial;
   position: absolute;
   font-size: 12px;
+  line-height: 1.6;
   top: 530px;
   left: 60px;
-  h3 {
-    margin-bottom: 10px;
-  }
 }
 
 // AR version

@@ -427,7 +427,7 @@ canvas {
   margin-bottom: 15px; }
 
 .info-styling p {
-  line-height: 1.5em;
+  line-height: 1.5;
   margin-bottom: 10px; }
 
 #videoPlayer {
@@ -446,12 +446,13 @@ canvas {
   height: 100%; }
 
 .stag-male-dimension {
+  width: 170px;
+  height: initial;
   position: absolute;
   font-size: 12px;
+  line-height: 1.6;
   top: 530px;
   left: 60px; }
-  .stag-male-dimension h3 {
-    margin-bottom: 10px; }
 
 #data-container {
   display: flex;
