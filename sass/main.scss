@@ -583,22 +583,38 @@ canvas {
   margin-top: 100px;
 }
 
-.bionomics-title-container
-{
+.bionomics-title-container {
   display: flex;
   flex-direction: column;
 }
 
-.bionomics-title-container h3
-{
+.bionomics-title-container h3 {
   font-size: $exo-header;
   font-weight: 700;
 }
-    .bionomics-title-container p{
-      margin-top: 20px;
-      line-height: 1.5;
-      width: 500px;
-    }
+.bionomics-title-container p {
+  margin-top: 20px;
+  line-height: 1.5;
+  max-width: 900px;
+}
+
+.data-story
+{
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+  background-color: pink;
+}
+
+.data-story h4
+{
+  font-size: 2em;
+}
+
+.data-story span
+{
+  font-weight: 600;
+}
 
 // ==========================
 // ==========================
