@@ -568,10 +568,37 @@ canvas {
 #data-container {
   display: flex;
   width: 90%;
-  height: 700px;
+  height: 70px;
   padding: 10px;
   margin: 0 auto;
 }
+
+// container
+.bionomics {
+  display: flex;
+  width: 90%;
+  height: auto;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.bionomics-title-container
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.bionomics-title-container h3
+{
+  font-size: $exo-header;
+  font-weight: 700;
+}
+    .bionomics-title-container p{
+      margin-top: 20px;
+      line-height: 1.5;
+      width: 500px;
+    }
 
 // ==========================
 // ==========================
