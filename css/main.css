@@ -280,6 +280,7 @@ nav {
 
 #button-menus-container {
   display: flex;
+  align-items: center;
   width: 90%;
   height: 700px;
   padding: 10px;
@@ -331,11 +332,11 @@ nav {
 .threemodel {
   position: relative;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  margin-left: 20px;
   width: 70%;
   height: 100%;
-  margin: 0 auto;
-  margin-left: 20px; }
+  margin: 0 auto; }
 
 model-viewer {
   max-width: 100%;
@@ -348,8 +349,8 @@ model-viewer {
 
 .right-side-space {
   width: 15%;
+  height: 100%;
   margin-left: 20px;
-  height: auto;
   padding: 20px;
   background-color: white; }
 
@@ -375,12 +376,11 @@ model-viewer {
   height: 100vh; }
 
 canvas {
-  max-width: 100%;
-  min-height: 700px;
-  position: fixed;
+  display: block;
+  width: 100%;
+  height: auto;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); }
+  top: 50%; }
 
 .dot {
   position: absolute;
@@ -403,16 +403,16 @@ canvas {
   100% {
     box-shadow: 0 0 15px #e4e1e2; } }
 #dot0 {
-  left: 544px;
-  bottom: 305px; }
+  left: 49%;
+  bottom: 46%; }
 
 #dot1 {
-  top: 60px;
-  right: 470px; }
+  bottom: 83%;
+  right: 46%; }
 
 #dot2 {
-  top: 420px;
-  right: 350px; }
+  top: 54%;
+  right: 32%; }
 
 .info-styling {
   position: absolute;
@@ -451,8 +451,8 @@ canvas {
   position: absolute;
   font-size: 12px;
   line-height: 1.6;
-  top: 530px;
-  left: 60px; }
+  left: 9%;
+  bottom: 30%; }
 
 #data-container {
   display: flex;
