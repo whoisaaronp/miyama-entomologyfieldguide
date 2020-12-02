@@ -49,7 +49,7 @@
             dot1.style.display = 'none'
             dot2.style.display = 'none'
         };
-        console.log(dot0);
+        
     });
 
     images[0].onload = render;
