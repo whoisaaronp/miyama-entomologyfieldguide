@@ -404,14 +404,14 @@ canvas {
     box-shadow: 0 0 15px #e4e1e2; } }
 #dot0 {
   left: 49%;
-  bottom: 46%; }
+  bottom: 38%; }
 
 #dot1 {
   bottom: 83%;
   right: 46%; }
 
 #dot2 {
-  top: 54%;
+  bottom: 36%;
   right: 32%; }
 
 .info-styling {
@@ -478,21 +478,56 @@ canvas {
   font-weight: 700; }
 
 .bionomics-title-container p {
+  width: 90%;
   margin-top: 20px;
   line-height: 1.5;
   max-width: 900px; }
 
 .data-story {
-  width: 100%;
+  width: 70%;
   height: 100%;
-  margin-top: 40px;
-  background-color: pink; }
+  margin-top: 60px; }
 
 .data-story h4 {
+  line-height: 1.5;
   font-size: 2em; }
 
 .data-story span {
   font-weight: 600; }
+
+input {
+  background-color: #919191;
+  height: 3px; }
+
+input[type="range"] krange-thumb {
+  width: 8%;
+  height: 850%;
+  border-radius: 33px;
+  background-color: #a8a8a8;
+  overflow: hidden; }
+
+input[type="range"]::-moz-range-thumb {
+  width: 8%;
+  height: 850%;
+  border-radius: 33px;
+  background-color: #a8a8a8;
+  overflow: hidden; }
+
+input[type="range"]::-webkit-range-thumb {
+  width: 8%;
+  height: 850%;
+  border-radius: 33px;
+  background-color: #a8a8a8;
+  overflow: hidden; }
+
+.chart-container {
+  margin-top: 20px; }
+
+#columnchart-mask-one {
+  width: 1000px;
+  height: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 footer {
   display: flex;

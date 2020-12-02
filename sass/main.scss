@@ -469,7 +469,6 @@ canvas {
   height: auto;
   left: 50%;
   top: 50%;
-
 }
 
 .dot {
@@ -500,7 +499,7 @@ canvas {
 // percetages
 #dot0 {
   left: 49%;
-  bottom: 46%;
+  bottom: 38%;
 }
 // mandibles
 #dot1 {
@@ -509,7 +508,7 @@ canvas {
 }
 // wing
 #dot2 {
-  top: 54%;
+  bottom: 36%;
   right: 32%;
 }
 
@@ -562,7 +561,6 @@ canvas {
   // top: 60%;
   left: 9%;
   bottom: 30%;
-
 }
 
 // AR version
@@ -597,27 +595,69 @@ canvas {
   font-weight: 700;
 }
 .bionomics-title-container p {
+  width: 90%;
   margin-top: 20px;
   line-height: 1.5;
   max-width: 900px;
 }
 
-.data-story
-{
-  width: 100%;
+.data-story {
+  width: 70%;
   height: 100%;
-  margin-top: 40px;
-  background-color: pink;
+  margin-top: 60px;
+  // background-color: pink;
 }
 
-.data-story h4
-{
+.data-story h4 {
+  line-height: 1.5;
   font-size: 2em;
 }
 
-.data-story span
-{
+.data-story span {
   font-weight: 600;
+}
+
+input {
+  background-color: #919191;
+  height: 3px;
+}
+
+input[type="range"] krange-thumb{
+  width: 8%;
+  height: 850%;
+  border-radius: 33px;
+  background-color: rgb(168, 168, 168);
+  overflow: hidden;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 8%;
+  height: 850%;
+  border-radius: 33px;
+  background-color: rgb(168, 168, 168);
+  overflow: hidden;
+  
+}
+
+// firefox
+input[type="range"]::-webkit-range-thumb {
+  width: 8%;
+  height: 850%;
+  border-radius: 33px;
+  background-color: rgb(168, 168, 168);
+  overflow: hidden;
+}
+
+.chart-container
+{
+  margin-top: 20px;
+}
+// chart 1 container
+#columnchart-mask-one {
+	width: 1000px;
+	height: 500px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 // ==========================
