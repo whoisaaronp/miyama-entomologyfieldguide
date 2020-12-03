@@ -239,7 +239,6 @@ nav {
 
 #grid-stack {
   display: flex;
-  direction: normal;
   flex-direction: column;
   margin-top: 130px;
 }
@@ -678,6 +677,59 @@ input[type="range"]::-webkit-range-thumb {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+// stag life cycle page
+
+#insect-cycle-grid
+{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+
+.insect-cycle-stlye{
+  
+  width: 40%;
+  height: 100%;
+
+  h3{
+    position: absolute;
+    bottom:95%;
+    right: 30%;
+    font-size: 72px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    opacity: 0.2;
+  }
+  p{
+    line-height: 1.5;
+  }
+}
+
+
+
+.insect-cycle-image{
+  max-width: 50%;
+  height: auto;
+}
+
+.insect-cycle-image img
+{
+  width: 100%;
+  height: 100%;
+  background-color: lightslategrey;
+  border: 1px solid #444;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+}
+
 
 // ==========================
 // ==========================
