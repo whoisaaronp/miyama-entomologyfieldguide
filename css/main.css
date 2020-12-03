@@ -339,9 +339,9 @@ nav {
   margin: 0 auto; }
 
 model-viewer {
-  max-width: 100%;
-  width: auto;
+  width: 100%;
   height: 700px;
+  margin-left: 20px;
   background-color: #efefef67;
   z-index: 0;
   border-radius: 4px;
@@ -353,6 +353,17 @@ model-viewer {
   margin-left: 20px;
   padding: 20px;
   background-color: white; }
+
+.right-side-space h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5em; }
+
+.right-side-space p {
+  margin-top: 20px;
+  line-height: 1.5em; }
+  .right-side-space p span {
+    font-weight: 700; }
 
 #start-button {
   cursor: pointer;
