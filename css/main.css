@@ -560,16 +560,23 @@ input[type="range"]::-webkit-range-thumb {
     position: absolute;
     bottom: 95%;
     right: 30%;
-    font-size: 72px;
+    font-size: 84px;
     font-weight: 500;
     letter-spacing: 2px;
     opacity: 0.2; }
+  .insect-cycle-stlye h4 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 20px;
+    line-height: 36px; }
   .insect-cycle-stlye p {
-    line-height: 1.5; }
+    line-height: 1.8;
+    margin-top: 20px; }
 
 .insect-cycle-image {
+  position: relative;
   max-width: 50%;
-  height: auto; }
+  height: 100%; }
 
 .insect-cycle-image img {
   width: 100%;
@@ -578,7 +585,14 @@ input[type="range"]::-webkit-range-thumb {
   border: 1px solid #444;
   overflow: hidden;
   border-radius: 4px;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+  box-shadow: 0 8px 6px -6px rgba(39, 39, 39, 0.486); }
+
+.insect-cycle-image img:nth-child(2) {
+  width: 64%;
+  height: 60%;
+  position: absolute;
+  top: 64%;
+  left: 32%; }
 
 footer {
   display: flex;
