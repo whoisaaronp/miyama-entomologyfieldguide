@@ -683,11 +683,49 @@ input[type="range"]::-webkit-range-thumb {
 #insect-cycle-grid
 {
   width: 90%;
+  height: auto;
   display: flex;
   flex-direction: row;
   position: relative;
   justify-content: space-between;
   margin: 0 auto;
+}
+
+// stage 2 reverse, not sure if it is the best method but,…
+#insect-cycle-grid-2
+{
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 330px;
+}
+
+#insect-cycle-grid-3
+{
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 330px;
+}
+
+#insect-cycle-grid-4
+{
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 330px;
 }
 
 
@@ -698,7 +736,7 @@ input[type="range"]::-webkit-range-thumb {
 
   h3{
     position: absolute;
-    bottom:95%;
+    bottom:94%;
     right: 30%;
     font-size: 84px;
     font-weight: 500;
@@ -716,8 +754,6 @@ input[type="range"]::-webkit-range-thumb {
     margin-top: 20px;
   }
 }
-
-
 
 .insect-cycle-image{
   position: relative;
@@ -743,6 +779,60 @@ input[type="range"]::-webkit-range-thumb {
   position: absolute;
   top: 64%;
   left: 32%;
+}
+
+//stage 2 text styling
+.insect-cycle-stlye-2{
+  
+  width: 40%;
+  height: 100%;
+
+  h3{
+    position: absolute;
+    bottom:92%;
+    right: 84%;
+    font-size: 84px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    opacity: 0.2;
+  }
+  h4{
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 20px;
+    line-height: 36px;
+  }
+  p{
+    line-height: 1.8;
+    margin-top: 20px;
+  }
+}
+
+//stage 2 text styling
+.insect-cycle-stlye-3{
+  
+  width: 40%;
+  height: 100%;
+
+  h3{
+    position: absolute;
+    bottom:92%;
+    right: 84%;
+    font-size: 84px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    opacity: 0.2;
+  }
+  h4{
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 20px;
+    line-height: 36px;
+  }
+  p{
+    line-height: 1.8;
+    margin-top: 20px;
+  }
 }
 
 // ==========================
