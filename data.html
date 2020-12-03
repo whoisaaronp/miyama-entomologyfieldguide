@@ -59,27 +59,114 @@
 			<h2 class="hidden">Introduction to stag beetle data</h2>
 			<div class="bionomics-title-container">
 				<h3> Data Research</h3>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam blanditiis alias minus! Doloremque distinctio maiores ipsam dolorem repudiandae qui culpa.</p>
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam blanditiis alias minus! Doloremque
+					distinctio maiores ipsam dolorem repudiandae qui culpa.</p>
 				<!-- data chart and text -->
 				<section id="data-story-one" class="data-story">
+					<h2 class="hidden">Google Chart 1</h2>
 					<h4>
-						1. Habitat associations of the stag beetle in mainland Europe and the United Kingdom.
+						1. Stag beetle habitats in mainland Europe and the United Kingdom.
 					</h4>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio vitae vel, maiores voluptas libero architecto nostrum quasi est reprehenderit aspernatur.</p>
 					<div id="chartwrapper-one">
+						<h2 class="hidden">Google Visualization Research</h2>
 						<!-- chartwrapper -->
+						<section class="chart-container">
+							<h2 class="hidden">Google Chartwrapper 1</h2>
+							<div id="columnchart-mask-one">
+								<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+								<script type="text/javascript">
+									google.charts.load('current');
+									google.charts.setOnLoadCallback(drawVisualization);
+
+									function drawVisualization() {
+										var myData = new google.visualization.ChartWrapper({
+											chartType: 'ColumnChart',
+											dataTable: [['Habitat Type', 'Europe', 'UK', { role: 'style' }],
+											['Oak', 30, 0, 'color: #bf3a33'],
+											['Parks', 25, 5, 'color: #bf3a33'],
+											['Gardens', 18, 72, 'color: #bf3a33'],
+											['Urban', 15, 20, 'color: #bf3a33'],
+											['Woods', 10, 0, 'color: #bf3a33'],
+											['Orchards', 5, 0, 'color: #bf3a33'],
+											['Forest', 5, 5, 'color: #bf3a33'],
+											['Cemeteries', 3, 0, 'color: #bf3a33'],
+											['Hedgerows', 2, 0, 'color: #bf3a33']
+											],
+											options: {
+												title: 'Bionomics and Distribution of Stag Beetles',
+												bar: { groupWidth: "55%" },
+												hAxis: {
+													title: 'Habitats'
+
+												},
+												vAxis: {
+													title: 'Percentage of Records',
+													minValue: 0,
+													maxValue: 100,
+												},
+											},
+											containerId: 'columnchart-mask-one'
+										});
+										myData.draw();
+									}
+								</script>
+							</div>
+						</section>
 					</div>
 					<p>
 						<span>Is it ok to keep a stag beetle as a pet?</span>
-						Definitely not! The whole point of the stag beetles adult life is to mate, so by putting it in a box you are stopping this.
-						</p>
+						Definitely not! The whole point of the stag beetles adult life is to mate, so by putting it in a
+						box you are stopping this.
+					</p>
 				</section>
 				<!-- two -->
 				<section id="data-story-two" class="data-story">
+					<h2 class="hidden">Google Chart 2</h2>
 					<h4>
 						2. The amount of predators of the stag beetle, across Europe
 					</h4>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio vitae vel, maiores voluptas libero architecto nostrum quasi est reprehenderit aspernatur.</p>
+					<div id="columnchart-mask-two">
+						<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+						<script type="text/javascript">
+							google.charts.load('current');
+							google.charts.setOnLoadCallback(drawVisualization);
+
+							function drawVisualization() {
+								var wrapper = new google.visualization.ChartWrapper({
+									chartType: 'ColumnChart',
+									dataTable: [['', 'Other Corvids', 'Magpie', 'Fox', 'Owl', 'Woodpeacker', 'Hedgehog', { role: 'style' }],
+									['', 70, 62, 58, 35, 22, 10,'color: #bf3a33' ]],
+									options: { 
+										'title': 'Percentage recorded across UK &Europe', 
+									
+										bar: { groupWidth: "65%" },
+										hAxis: {
+											title: 'Predators'
+										},
+										vAxis: {
+											title: 'Percentage',
+											minValue: 0,
+											maxValue: 100,
+										},
+									},
+										containerId: 'columnchart-mask-two'
+								});
+								wrapper.draw();
+							}
+						</script>
+					</div>
+					<p>
+						<span></span>
+						The main predators to stag beetles are magpies, they leave the beetle in a characteristic way,
+						just head, thorax and wing cases, with some or all of the legs. The beetles can survive like
+						this for up to several days. Many people find beetles like this and are very distressed about it
+						and curious to know why it has happened.</p>
+					<p>Other predators include foxes, (they eat them whole and bits are found in the pellets) other
+						birds, bats, hedgehogs and cats – which tend to puncture the beetle then lose interest rather
+						than kill them. Then of course there’s man – not a predator but he kills many every year by
+						destroying the habitat, running the beetles over, and perhaps the worst of all – deliberately
+						stamping on them!
+					</p>
 					<div id="chartwrapper-two">
 						<!-- chartwrapper -->
 
@@ -87,11 +174,13 @@
 				</section>
 				<!-- three -->
 				<section id="data-story-three" class="data-story">
+					<h2 class="hidden">Google Chart 3</h2>
 					<h4>
 						3. Which size of male body length in Europe and UK is the biggest?
 
 					</h4>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio vitae vel, maiores voluptas libero architecto nostrum quasi est reprehenderit aspernatur.</p>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio vitae vel, maiores voluptas
+						libero architecto nostrum quasi est reprehenderit aspernatur.</p>
 					<div id="chartwrapper-three">
 						<!-- chartwrapper -->
 
@@ -103,8 +192,6 @@
 	<script src="js/scrollTrigger.js"></script>
 	<!-- main js -->
 	<script src="js/main.js"></script>
-	<script src="js/interact.js"></script>
-	<script src="js/explodeKnob.js"></script>
 </body>
 
 </html>
