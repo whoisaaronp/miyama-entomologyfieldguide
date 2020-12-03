@@ -6,7 +6,8 @@
     gsap.registerPlugin(ScrollTrigger);
     "use strict"
 
-    // stag-beetle gallery of images
+    // 1. stag-beetle gallery of images
+    // 2. get all the sections and convert to elems
     gsap.utils.toArray('.insect-grid').forEach(section => {
         const elems = section.querySelectorAll('.insect-image');
         // Set starting params for sections
@@ -17,7 +18,8 @@
           ease: 'Power3.out',
           overwrite: 'auto',
         });
-        
+        //explaination
+        //https://attacomsian.com/blog/javascript-htmlcollection
         ScrollTrigger.create({
           trigger: section,
           start: 'top 60%',
@@ -46,6 +48,6 @@
           }),
         });
       })
-
+      //  each time i scroll up and down the elems(elements in my const elems above) will render in and out with the onenterback and leavefeature
 
 })();
