@@ -315,6 +315,12 @@ nav {
 .back-button:hover {
   transform: scale(1.1); }
 
+.button-wrapper a {
+  display: block;
+  text-align: center;
+  color: black;
+  text-decoration: none; }
+
 .button-stack {
   cursor: pointer;
   font-size: 0.9em;
