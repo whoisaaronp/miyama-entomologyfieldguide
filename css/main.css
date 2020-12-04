@@ -547,29 +547,68 @@ input[type="range"]::-webkit-range-thumb {
 
 #insect-cycle-grid {
   width: 90%;
+  height: auto;
   display: flex;
   flex-direction: row;
   position: relative;
   justify-content: space-between;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 170px; }
+
+#insect-cycle-grid-2 {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 330px; }
+
+#insect-cycle-grid-3 {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 330px; }
+
+#insect-cycle-grid-4 {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 330px; }
 
 .insect-cycle-stlye {
   width: 40%;
   height: 100%; }
   .insect-cycle-stlye h3 {
     position: absolute;
-    bottom: 95%;
+    bottom: 94%;
     right: 30%;
-    font-size: 72px;
+    font-size: 84px;
     font-weight: 500;
     letter-spacing: 2px;
     opacity: 0.2; }
+  .insect-cycle-stlye h4 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 20px;
+    line-height: 36px; }
   .insect-cycle-stlye p {
-    line-height: 1.5; }
+    line-height: 1.8;
+    margin-top: 20px; }
 
 .insect-cycle-image {
+  position: relative;
   max-width: 50%;
-  height: auto; }
+  height: 100%; }
 
 .insect-cycle-image img {
   width: 100%;
@@ -578,7 +617,74 @@ input[type="range"]::-webkit-range-thumb {
   border: 1px solid #444;
   overflow: hidden;
   border-radius: 4px;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+  box-shadow: 0 8px 6px -6px rgba(39, 39, 39, 0.486); }
+
+.insect-cycle-image img:nth-child(2) {
+  width: 64%;
+  height: 60%;
+  position: absolute;
+  top: 64%;
+  left: 32%; }
+
+.insect-cycle-stlye-2 {
+  width: 40%;
+  height: 100%; }
+  .insect-cycle-stlye-2 h3 {
+    position: absolute;
+    bottom: 92%;
+    right: 86%;
+    font-size: 84px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    opacity: 0.2; }
+  .insect-cycle-stlye-2 h4 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 20px;
+    line-height: 36px; }
+  .insect-cycle-stlye-2 p {
+    line-height: 1.8;
+    margin-top: 20px; }
+
+.insect-cycle-stlye-3 {
+  width: 40%;
+  height: 100%; }
+  .insect-cycle-stlye-3 h3 {
+    position: absolute;
+    bottom: 94%;
+    right: 29%;
+    font-size: 84px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    opacity: 0.2; }
+  .insect-cycle-stlye-3 h4 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 20px;
+    line-height: 36px; }
+  .insect-cycle-stlye-3 p {
+    line-height: 1.8;
+    margin-top: 20px; }
+
+.insect-cycle-stlye-4 {
+  width: 40%;
+  height: 100%; }
+  .insect-cycle-stlye-4 h3 {
+    position: absolute;
+    bottom: 92%;
+    right: 89%;
+    font-size: 84px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    opacity: 0.2; }
+  .insect-cycle-stlye-4 h4 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 20px;
+    line-height: 36px; }
+  .insect-cycle-stlye-4 p {
+    line-height: 1.8;
+    margin-top: 20px; }
 
 footer {
   display: flex;
