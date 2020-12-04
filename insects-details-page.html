@@ -4,7 +4,6 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta charset="utf-8" />
 	<title>Entomology Institute of Canada</title>
 	<link rel="stylesheet" href="css/hamburger.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;400;600;800&display=swap" rel="stylesheet" />
@@ -19,81 +18,83 @@
 <body id="background-forest">
 	<main>
 		<!-- 1. background image -->
-			<header>
-					<h1 class="hidden">Site Logo</h1>
-					<a href="index.html"><img src="images/entomology-institute-logo.svg"
-							alt="Entomology Institute of Canada" /></a>
-				</div>
-				<nav>
-					<ul class="nav-links">
-						<li class="nav-link"><a href="index.html">home</a></li>
-						<li class="nav-link"><a href="lifecycle.html">Life Cycle</a></li>
-						<li class="nav-link"><a href="#">data research</a></li>
-						<li class="nav-link"><a href="#">about us</a></li>
-					</ul>
-					<!-- menu button -->
-					<button class="hamburger hamburger--emphatic" type="button">
-						<span class="hamburger-box">
-							<span class="hamburger-inner"></span>
-						</span>
-					</button>
-				</nav>
-			</header>
-			<!-- video -->
-			<section id="button-menus-container">
-				<!-- menu wrapper -->
-				<div class="menu-button-left-side" id="delay-button">
-					<a href="local-infantry.html"><div class="back-button hover-circle">
+		<header>
+			<h1 class="hidden">Site Logo</h1>
+			<a href="index.html"><img src="images/entomology-institute-logo.svg"
+					alt="Entomology Institute of Canada" /></a>
+			<nav>
+				<ul class="nav-links">
+					<li class="nav-link"><a href="index.html">home</a></li>
+					<li class="nav-link"><a href="lifecycle.html">Life Cycle</a></li>
+					<li class="nav-link"><a href="#">data research</a></li>
+					<li class="nav-link"><a href="#">about us</a></li>
+				</ul>
+				<!-- menu button -->
+				<button class="hamburger hamburger--emphatic" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</nav>
+		</header>
+		<!-- video -->
+		<section id="button-menus-container">
+			<!-- menu wrapper -->
+			<div class="menu-button-left-side" id="delay-button">
+				<a href="local-infantry.html">
+					<div class="back-button hover-circle">
 						<!-- backbutton icon -->
 						<img src="images/close-button.png" alt="close-section-icon">
-					</div></a>
-					<h2 class="hidden">Left Menu</h2>
-					<!-- button wrapper -->
-					<section class="button-wrapper">
-						<a href="insects-details-page.html">
-							<button id="explodeinsect" class="button-stack">insect body</button>
-						</a>
-						<!-- gltf -->
-						<a href="3dmodel.html">
-							<button id="explodeinsect" class="button-stack">3D model</button>
-						</a>
-						<!-- videoplayer -->
-						<a href="matingvideo.html">
-							<button class="button-stack">mating</button>
-						</a>
-						<!-- Scan for the VR experience -->
-						<a href="arexperience.html">
-							<button id="arinsect" class="button-stack">take one home</button>
-						</a> 
-					</section>
-				</div>
-				<section class="threemodel">
-					<h2 class="hidden">Explode View</h2>
-					<div class="stag-male-dimension">
-						<p>Common Name: Stag Beetle Latin Name: Lucanus Cervus Family: Lucanidae Average length: 3.5 to 7.5cm</p>
 					</div>
-					<canvas id="explode-view"><!-- explode image here --></canvas>
-					<!-- write fallback if no canvas -->
-					<input type="range" min="0" max="100" value="0" id="slider-knob">
-					<!-- dot markers -->
-					<div class="dot" id="dot0" data-box="0"></div>
-					<div class="dot" id="dot1" data-box="1"></div>
-					<div class="dot" id="dot2" data-box="2"></div>
+				</a>
+				<h2 class="hidden">Left Menu</h2>
+				<!-- button wrapper -->
+				<section class="button-wrapper">
+					<h2 class="hidden">Option Menu</h2>
+					<a href="insects-details-page.html" class="button-stack">insect body</a>
+					<!-- gltf -->
+					<a href="3dmodel.html" class="button-stack">3D model</a>
+					<!-- videoplayer -->
+					<a href="matingvideo.html" class="button-stack">mating</a>
+					<!-- Scan for the VR experience -->
+					<a href="arexperience.html" class="button-stack">take one home</a>
 				</section>
-				<!-- feature inputs would be shown here -->
-				<section class="right-side-space">
+			</div>
+			<section class="threemodel">
+				<h2 class="hidden">Explode View</h2>
+				<div class="stag-male-dimension">
+					<p>Common Name: Stag Beetle Latin Name: Lucanus Cervus Family: Lucanidae Average length: 3.5 to
+						7.5cm</p>
+				</div>
+				<canvas id="explode-view">
+					<!-- explode image here --></canvas>
+				<!-- write fallback if no canvas -->
+				<input type="range" min="0" max="100" value="0" id="slider-knob">
+				<!-- dot markers -->
+				<div class="dot" id="dot0" data-box="0"></div>
+				<div class="dot" id="dot1" data-box="1"></div>
+				<div class="dot" id="dot2" data-box="2"></div>
+			</section>
+			<!-- feature inputs would be shown here -->
+			<section class="right-side-space">
+				<h2 class="hidden">Insect feature panel</h2>
+				<section id="info0" class="info-styling">
 					<h2 class="hidden">Insect feature panel</h2>
-					<section id="info0" class="info-styling">
-							<!-- text -->
-					</section>
-					<section id="info1" class="info-styling">
-						<!-- text -->
-					</section>
-					<section id="info2" class="info-styling">
-						<!-- text -->
-					</section>
+
+					<!-- text -->
+				</section>
+				<section id="info1" class="info-styling">
+					<h2 class="hidden">Insect feature panel</h2>
+
+					<!-- text -->
+				</section>
+				<section id="info2" class="info-styling">
+					<h2 class="hidden">Insect feature panel</h2>
+
+					<!-- text -->
 				</section>
 			</section>
+		</section>
 	</main>
 	<script src="js/scrollTrigger.js"></script>
 	<!-- main js -->
