@@ -105,12 +105,16 @@ nav {
   align-items: center;
   margin-top: 15%; }
 
-#introduction-button button {
+#introduction-button a {
+  display: block;
   padding: 20px;
   width: 375px;
   height: 65px;
   border-style: none;
   border: 2px solid #444;
+  text-align: center;
+  color: black;
+  text-decoration: none;
   background-color: transparent; }
 
 #introduction-button {
