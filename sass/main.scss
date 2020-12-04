@@ -689,6 +689,7 @@ input[type="range"]::-webkit-range-thumb {
   position: relative;
   justify-content: space-between;
   margin: 0 auto;
+  margin-top: 170px;
 }
 
 // stage 2 reverse, not sure if it is the best method but,…
@@ -709,7 +710,7 @@ input[type="range"]::-webkit-range-thumb {
   width: 90%;
   height: auto;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   position: relative;
   justify-content: space-between;
   margin: 0 auto;
@@ -727,7 +728,6 @@ input[type="range"]::-webkit-range-thumb {
   margin: 0 auto;
   margin-top: 330px;
 }
-
 
 .insect-cycle-stlye{
   
@@ -790,7 +790,7 @@ input[type="range"]::-webkit-range-thumb {
   h3{
     position: absolute;
     bottom:92%;
-    right: 84%;
+    right: 86%;
     font-size: 84px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -816,8 +816,8 @@ input[type="range"]::-webkit-range-thumb {
 
   h3{
     position: absolute;
-    bottom:92%;
-    right: 84%;
+    bottom:94%;
+    right: 29%;
     font-size: 84px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -834,6 +834,35 @@ input[type="range"]::-webkit-range-thumb {
     margin-top: 20px;
   }
 }
+
+
+//stage 2 text styling
+.insect-cycle-stlye-4{
+  
+  width: 40%;
+  height: 100%;
+
+  h3{
+    position: absolute;
+    bottom:92%;
+    right: 89%;
+    font-size: 84px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    opacity: 0.2;
+  }
+  h4{
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 20px;
+    line-height: 36px;
+  }
+  p{
+    line-height: 1.8;
+    margin-top: 20px;
+  }
+}
+
 
 // ==========================
 // ==========================
