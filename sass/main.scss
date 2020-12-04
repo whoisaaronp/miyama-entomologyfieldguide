@@ -455,13 +455,18 @@ model-viewer {
   margin-top: 90px;
 }
 
-#start-button button {
+#start-button a {
+  display: block;
+  width: 375px;
+  height: 65px;
+  text-decoration: none;
+  text-align: center;
   text-transform: uppercase;
   font-size: 18px;
   padding: 20px;
-  width: 375px;
-  height: 65px;
+  display: block;
   border-style: none;
+  color: black;
   border: 2px solid #444;
   background-color: transparent;
 }
