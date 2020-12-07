@@ -570,6 +570,10 @@ input[type="range"]::-webkit-range-thumb {
   justify-content: space-between;
   margin: 0 auto;
   margin-top: 65px; }
+  #insect-cycle-grid span {
+    margin-top: 5px;
+    font-size: 10px;
+    color: #919191; }
 
 #insect-cycle-grid-2 {
   width: 90%;

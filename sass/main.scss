@@ -708,6 +708,11 @@ input[type="range"]::-webkit-range-thumb {
   justify-content: space-between;
   margin: 0 auto;
   margin-top: 65px;
+  span{
+    margin-top:5px;
+    font-size: 10px;
+    color: #919191;
+  }
 }
 
 // stage 2 reverse, not sure if it is the best method but,…
