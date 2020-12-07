@@ -66,7 +66,7 @@
 					<h4>
 						1. Stag beetle habitats in mainland Europe and the United Kingdom.
 					</h4>
-					<div id="chartwrapper-one">
+					<div>
 						<h2 class="hidden">Google Visualization Research</h2>
 						<!-- chartwrapper -->
 						<section class="chart-container">
@@ -177,11 +177,41 @@
 					<h4>
 						3. Which region has the biggest male body length in Europe and UK?
 					</h4>
+					<div id="europe-distribution">
+						<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+						<script type="text/javascript">
+						  google.charts.load('current', {'packages':['corechart']});
+						  google.charts.setOnLoadCallback(drawSeriesChart);
+					
+						function drawSeriesChart() {
+					
+						  var data = google.visualization.arrayToDataTable([
+							['ID', 'Life Expectancy', 'Frequency', 'Region',     'Population'],
+							['BEL',    50,              40,      'Belgium',  33739900],
+							['FRA',    70,              70,      'France',         81902307],
+							['GER',    35,               50,      'Germany',         5523095],
+							['NET',    23,              50,      'The Netherlands',    79716203],
+							['SLO',    90,              90,         'Slovenia',         61801570],
+							['ESP',    47,              50,       'Spain',    73137148],
+							['UK',    10,              20,      'United Kingdom',    31090763]
+						
+						  ]);
+					
+						  var options = {
+							title: 'European Distribution',
+							hAxis: {title: 'Frequency'},
+							vAxis: {title: 'Total body length, mm'},
+							bubble: {textStyle: {fontSize: 11}}
+						  };
+					
+						  var chart = new google.visualization.BubbleChart(document.getElementById('europe-distribution'));
+						  chart.draw(data, options);
+						}
+						</script>
+					
+					</div>
 					<p class="highlight">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio vitae vel, maiores voluptas
 						libero architecto nostrum quasi est reprehenderit aspernatur.</p>
-					<div id="chartwrapper-three">
-						<!-- chartwrapper -->
-					</div>
 				</section>
 			</div>
 		</section>

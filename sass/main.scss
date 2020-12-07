@@ -633,7 +633,7 @@ canvas {
 
 .highlight{
   padding: 15px;
-  background-color: lightgoldenrodyellow;
+  background-color: rgb(223, 234, 248);
 }
 
 .data-story {
@@ -685,6 +685,7 @@ input[type="range"]::-webkit-range-thumb {
 .chart-container {
   margin-top: 20px;
 }
+
 // chart 1 container
 #columnchart-mask-one {
   width: 1000px;
@@ -693,12 +694,22 @@ input[type="range"]::-webkit-range-thumb {
   margin-bottom: 20px;
 }
 
+// chart 2 container
 #columnchart-mask-two {
   width: 1000px;
   height: 500px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+// chart 3 container
+#europe-distribution {
+  width: 1000px;
+  height: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 
 // stag life cycle page
 
