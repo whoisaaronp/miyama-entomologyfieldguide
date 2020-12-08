@@ -59,15 +59,14 @@
 			<h2 class="hidden">Introduction to stag beetle data</h2>
 			<div class="bionomics-title-container">
 				<h3> Data Research</h3>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam blanditiis alias minus! Doloremque
-					distinctio maiores ipsam dolorem repudiandae qui culpa.</p>
+				<p>Enjoy more interesting facts about Stag Beetles as well as what t do if oyu encounter a park on your next trip to the park.</p>
 				<!-- data chart and text -->
 				<section id="data-story-one" class="data-story">
 					<h2 class="hidden">Google Chart 1</h2>
 					<h4>
 						1. Stag beetle habitats in mainland Europe and the United Kingdom.
 					</h4>
-					<div id="chartwrapper-one">
+					<div>
 						<h2 class="hidden">Google Visualization Research</h2>
 						<!-- chartwrapper -->
 						<section class="chart-container">
@@ -113,7 +112,7 @@
 							</div>
 						</section>
 					</div>
-					<p>
+					<p class="highlight">
 						<span>Is it ok to keep a stag beetle as a pet?</span>
 						Definitely not! The whole point of the stag beetles adult life is to mate, so by putting it in a
 						box you are stopping this.
@@ -155,13 +154,13 @@
 							}
 						</script>
 					</div>
-					<p>
-						<span></span>
+					<p class="highlight">
+						<span>What are its main predators?</span>
 						The main predators to stag beetles are magpies, they leave the beetle in a characteristic way,
 						just head, thorax and wing cases, with some or all of the legs. The beetles can survive like
 						this for up to several days. Many people find beetles like this and are very distressed about it
 						and curious to know why it has happened.</p>
-					<p>Other predators include foxes, (they eat them whole and bits are found in the pellets) other
+					<p class="highlight">Other predators include foxes, (they eat them whole and bits are found in the pellets) other
 						birds, bats, hedgehogs and cats – which tend to puncture the beetle then lose interest rather
 						than kill them. Then of course there’s man – not a predator but he kills many every year by
 						destroying the habitat, running the beetles over, and perhaps the worst of all – deliberately
@@ -176,13 +175,43 @@
 				<section id="data-story-three" class="data-story">
 					<h2 class="hidden">Google Chart 3</h2>
 					<h4>
-						3. Which size of male body length in Europe and UK is the biggest?
+						3. Which region has the biggest male body length in Europe and UK?
 					</h4>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio vitae vel, maiores voluptas
-						libero architecto nostrum quasi est reprehenderit aspernatur.</p>
-					<div id="chartwrapper-three">
-						<!-- chartwrapper -->
+					<div id="europe-distribution">
+						<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+						<script type="text/javascript">
+						  google.charts.load('current', {'packages':['corechart']});
+						  google.charts.setOnLoadCallback(drawSeriesChart);
+					
+						function drawSeriesChart() {
+					
+						  var data = google.visualization.arrayToDataTable([
+							['ID', 'Life Expectancy', 'Frequency', 'Region',     'Population'],
+							['BEL',    50,              40,      'Belgium',  33739900],
+							['FRA',    70,              70,      'France',         81902307],
+							['GER',    35,               50,      'Germany',         5523095],
+							['NET',    23,              50,      'The Netherlands',    79716203],
+							['SLO',    90,              90,         'Slovenia',         61801570],
+							['ESP',    47,              50,       'Spain',    73137148],
+							['UK',    10,              20,      'United Kingdom',    31090763]
+						
+						  ]);
+					
+						  var options = {
+							title: 'European Distribution',
+							hAxis: {title: 'Frequency'},
+							vAxis: {title: 'Total body length, mm'},
+							bubble: {textStyle: {fontSize: 11}}
+						  };
+					
+						  var chart = new google.visualization.BubbleChart(document.getElementById('europe-distribution'));
+						  chart.draw(data, options);
+						}
+						</script>
+					
 					</div>
+					<p class="highlight">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio vitae vel, maiores voluptas
+						libero architecto nostrum quasi est reprehenderit aspernatur.</p>
 				</section>
 			</div>
 		</section>
