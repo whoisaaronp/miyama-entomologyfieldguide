@@ -4,9 +4,9 @@
     // gsap.registerPlugin(ScrollTrigger);
     "use strict"
 
-    const dot0 = document.getElementById("#dot0");
-    const dot1 = document.getElementById("#dot1");
-    const dot2 = document.getElementById("#dot2");
+    const dot0 = document.querySelector("#dot0");
+    const dot1 = document.querySelector("#dot1");
+    const dot2 = document.querySelector("#dot2");
     const canvas = document.querySelector("#explode-view");
     // we're using a 2d context, draw on the canvas
     const context = canvas.getContext("2d");
