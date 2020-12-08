@@ -501,6 +501,7 @@ canvas {
   top: 50%;
 }
 
+// hide the dots intitial
 .dot {
   display: none;
   position: absolute;
@@ -658,15 +659,7 @@ input {
   height: 3px;
 }
 
-input[type="range"] krange-thumb {
-  width: 8%;
-  height: 850%;
-  border-radius: 33px;
-  background-color: rgb(168, 168, 168);
-  overflow: hidden;
-}
-
-input[type="range"]::-moz-range-thumb {
+input[type="range"] range-thumb {
   width: 8%;
   height: 850%;
   border-radius: 33px;
@@ -675,13 +668,63 @@ input[type="range"]::-moz-range-thumb {
 }
 
 // firefox
-input[type="range"]::-webkit-range-thumb {
+input[type="range"]::-moz-range-thumb {
   width: 8%;
   height: 850%;
   border-radius: 33px;
   background-color: rgb(168, 168, 168);
   overflow: hidden;
 }
+
+// CHROME, SAFARI, OPERA
+// input[type="range"]::-webkit-range-thumb {
+//   width: 8%;
+//   height: 850%;
+//   border-radius: 33px;
+//   background-color: rgb(168, 168, 168);
+//   overflow: hidden;
+// }
+
+input[type=range]{
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 500px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background: #444;
+  margin-top: -14px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+
+
+
+
+
+
+
+
+
 
 .chart-container {
   margin-top: 20px;
