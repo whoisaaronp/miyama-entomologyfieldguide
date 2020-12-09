@@ -76,7 +76,11 @@ nav {
   color: black;
   font-size: 4rem;
   font-weight: 700;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: 0.3s; }
+
+.nav-links li a:hover, .nav-links li a:focus {
+  color: #f1f1f1; }
 
 .nav-links li {
   opacity: 0px; }
