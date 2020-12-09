@@ -10,7 +10,9 @@
 *:after {
   box-sizing: border-box; }
 
-html {
+html,
+.custom-body-class {
+  position: relative;
   overflow-x: hidden; }
 
 body {
@@ -79,7 +81,8 @@ nav {
   text-decoration: none;
   transition: 0.3s; }
 
-.nav-links li a:hover, .nav-links li a:focus {
+.nav-links li a:hover,
+.nav-links li a:focus {
   color: #f1f1f1; }
 
 .nav-links li {
@@ -475,6 +478,9 @@ canvas {
   width: 100%;
   height: 100%; }
 
+.video-level {
+  z-index: 0; }
+
 .stag-male-dimension {
   width: 170px;
   height: initial;
@@ -547,19 +553,19 @@ input[type="range"]::-moz-range-thumb {
   background-color: #a8a8a8;
   overflow: hidden; }
 
-input[type=range] {
+input[type="range"] {
   -webkit-appearance: none;
   margin: 18px 0;
   width: 100%; }
 
-input[type=range]::-webkit-slider-runnable-track {
+input[type="range"]::-webkit-slider-runnable-track {
   width: 500px;
   height: 5px;
   background: #ddd;
   border: none;
   border-radius: 5px; }
 
-input[type=range]::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: none;
   height: 32px;
@@ -568,10 +574,10 @@ input[type=range]::-webkit-slider-thumb {
   background: #444;
   margin-top: -14px; }
 
-input[type=range]:focus {
+input[type="range"]:focus {
   outline: none; }
 
-input[type=range]:focus::-webkit-slider-runnable-track {
+input[type="range"]:focus::-webkit-slider-runnable-track {
   background: #ccc; }
 
 .chart-container {
