@@ -547,7 +547,7 @@ canvas {
 .bionomics-title-container p {
   margin-top: 20px;
   line-height: 1.5;
-  text-align: center; }
+  text-align: left; }
 
 .highlight {
   width: 75%;
