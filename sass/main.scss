@@ -14,11 +14,13 @@
 *:after {
   box-sizing: border-box;
 }
-html {
+html,
+.custom-body-class {
   overflow-x: hidden;
 }
 
 body {
+  position:relative;
   font-family: "Exo", sans-serif;
   overflow-x: hidden;
 }
@@ -74,6 +76,7 @@ nav {
 }
 
 .nav-links {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -92,6 +95,11 @@ nav {
   transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
 
+.nav-links.is-active{
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
 // my underlined list in nav links needs to have a display of
 // none in js i need to toggle the display property
 .nav-links li a {
@@ -103,12 +111,45 @@ nav {
   transition: 0.3s;
 }
 
-.nav-links li a:hover, .nav-links li a:focus {
+.nav-links li a:hover,
+.nav-links li a:focus {
   color: #f1f1f1;
 }
 
 .nav-links li {
   opacity: 0px;
+}
+
+// menu button
+.menu-content{
+  font-family: 'Exo', sans-serif;
+  cursor: pointer;
+  padding: 20px;
+  border: 0;
+  background-color: transparent;
+  
+}
+.menu-content span{
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.menu-close
+{
+  font-family: 'Exo', sans-serif;
+  position: absolute;
+  top: 54px;
+  right: 85px;
+  cursor: pointer;
+  padding: 20px;
+  border: 0;
+  background-color: transparent;
+}
+
+.menu-close span
+{
+  font-size: 3em;
+  text-transform: uppercase;
 }
 
 #intro-logo-container {
@@ -395,8 +436,7 @@ nav {
   transform: scale(1.1);
 }
 
-.button-wrapper a
-{
+.button-wrapper a {
   display: block;
   text-align: center;
   color: black;
@@ -588,6 +628,10 @@ canvas {
   height: 100%;
 }
 
+.video-level {
+  z-index: 0;
+}
+
 .stag-male-dimension {
   width: 170px;
   height: initial;
@@ -614,45 +658,47 @@ canvas {
 
 // container
 .bionomics {
-  display: flex;
   width: 90%;
   height: auto;
   padding: 10px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 .bionomics-title-container {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .bionomics-title-container h3 {
   font-size: $exo-header;
   font-weight: 700;
+  text-align: center;
 }
 .bionomics-title-container p {
-  width: 90%;
+  // max-width: 500px;
   margin-top: 20px;
   line-height: 1.5;
-  max-width: 900px;
+  text-align: left;
 }
 
-.highlight{
+.highlight {
+  width: 75%;
   padding: 15px;
   background-color: rgb(223, 234, 248);
+  margin: 0 auto;
 }
 
 .data-story {
-  width: 100%;
-  height: 100%;
   margin-top: 60px;
-  // background-color: pink;
 }
 
 .data-story h4 {
   line-height: 1.5;
   font-size: 2em;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .data-story span {
@@ -672,7 +718,7 @@ input[type="range"] range-thumb {
   overflow: hidden;
 }
 
-// firefox
+// FIREFOX
 input[type="range"]::-moz-range-thumb {
   width: 8%;
   height: 850%;
@@ -682,21 +728,13 @@ input[type="range"]::-moz-range-thumb {
 }
 
 // CHROME, SAFARI, OPERA
-// input[type="range"]::-webkit-range-thumb {
-//   width: 8%;
-//   height: 850%;
-//   border-radius: 33px;
-//   background-color: rgb(168, 168, 168);
-//   overflow: hidden;
-// }
-
-input[type=range]{
+input[type="range"] {
   -webkit-appearance: none;
   margin: 18px 0;
   width: 100%;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
+input[type="range"]::-webkit-slider-runnable-track {
   width: 500px;
   height: 5px;
   background: #ddd;
@@ -704,7 +742,7 @@ input[type=range]::-webkit-slider-runnable-track {
   border-radius: 5px;
 }
 
-input[type=range]::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: none;
   height: 32px;
@@ -714,24 +752,18 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: -14px;
 }
 
-input[type=range]:focus {
+input[type="range"]:focus {
   outline: none;
 }
 
-input[type=range]:focus::-webkit-slider-runnable-track {
+input[type="range"]:focus::-webkit-slider-runnable-track {
   background: #ccc;
 }
 
-
-
-
-
-
-
-
-
-
 .chart-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   margin-top: 20px;
 }
 
@@ -759,11 +791,9 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   margin-bottom: 20px;
 }
 
-
 // stag life cycle page
 
-#insect-cycle-grid
-{
+#insect-cycle-grid {
   width: 90%;
   height: auto;
   display: flex;
@@ -773,16 +803,15 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   justify-content: space-between;
   margin: 0 auto;
   margin-top: 65px;
-  span{
-    margin-top:5px;
+  span {
+    margin-top: 5px;
     font-size: 10px;
     color: #919191;
   }
 }
 
 // stage 2 reverse, not sure if it is the best method but,…
-#insect-cycle-grid-2
-{
+#insect-cycle-grid-2 {
   width: 90%;
   height: auto;
   display: flex;
@@ -794,8 +823,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   margin-top: 330px;
 }
 
-#insect-cycle-grid-3
-{
+#insect-cycle-grid-3 {
   width: 90%;
   height: auto;
   display: flex;
@@ -807,8 +835,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   margin-top: 330px;
 }
 
-#insect-cycle-grid-4
-{
+#insect-cycle-grid-4 {
   width: 90%;
   height: auto;
   display: flex;
@@ -820,12 +847,11 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   margin-top: 330px;
 }
 
-.insect-cycle-stlye{
-  
+.insect-cycle-stlye {
   width: 40%;
   height: 100%;
 
-  h3{
+  h3 {
     position: absolute;
     bottom: 73%;
     right: 23%;
@@ -834,26 +860,25 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     letter-spacing: 2px;
     opacity: 0.2;
   }
-  h4{
+  h4 {
     font-size: 26px;
     font-weight: 600;
     margin-top: 20px;
     line-height: 36px;
   }
-  p{
+  p {
     line-height: 1.8;
     margin-top: 20px;
   }
 }
 
-.insect-cycle-image{
+.insect-cycle-image {
   position: relative;
   max-width: 50%;
   height: 100%;
 }
 
-.insect-cycle-image img
-{
+.insect-cycle-image img {
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -862,10 +887,9 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   overflow: hidden;
   border-radius: 4px;
   box-shadow: 0 8px 6px -6px rgba(39, 39, 39, 0.486);
-
 }
 
-.insect-cycle-image img:nth-child(2){
+.insect-cycle-image img:nth-child(2) {
   width: 64%;
   height: 60%;
   position: absolute;
@@ -874,12 +898,11 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 //stage 2 text styling
-.insect-cycle-stlye-2{
-  
+.insect-cycle-stlye-2 {
   width: 40%;
   height: 100%;
 
-  h3{
+  h3 {
     position: absolute;
     bottom: 94%;
     right: 43%;
@@ -888,25 +911,24 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     letter-spacing: 2px;
     opacity: 0.2;
   }
-  h4{
+  h4 {
     font-size: 26px;
     font-weight: 600;
     margin-top: 20px;
     line-height: 36px;
   }
-  p{
+  p {
     line-height: 1.8;
     margin-top: 20px;
   }
 }
 
 //stage 2 text styling
-.insect-cycle-stlye-3{
-  
+.insect-cycle-stlye-3 {
   width: 40%;
   height: 100%;
 
-  h3{
+  h3 {
     position: absolute;
     bottom: 95%;
     right: 56%;
@@ -915,26 +937,24 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     letter-spacing: 2px;
     opacity: 0.2;
   }
-  h4{
+  h4 {
     font-size: 26px;
     font-weight: 600;
     margin-top: 20px;
     line-height: 36px;
   }
-  p{
+  p {
     line-height: 1.8;
     margin-top: 20px;
   }
 }
 
-
 //stage 2 text styling
-.insect-cycle-stlye-4{
-  
+.insect-cycle-stlye-4 {
   width: 40%;
   height: 100%;
 
-  h3{
+  h3 {
     position: absolute;
     bottom: 71%;
     right: 81%;
@@ -943,19 +963,25 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     letter-spacing: 2px;
     opacity: 0.2;
   }
-  h4{
+  h4 {
     font-size: 26px;
     font-weight: 600;
     margin-top: 20px;
     line-height: 36px;
   }
-  p{
+  p {
     line-height: 1.8;
     margin-top: 20px;
   }
 }
 
-
+// custom back to menu
+.back-to-menu
+{
+  margin-left: 80px;
+  height: 0;
+  background-color: teal;
+}
 // ==========================
 // ==========================
 // ========== Footer ========

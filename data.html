@@ -5,7 +5,6 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Entomology Institute of Canada</title>
-	<link rel="stylesheet" href="css/hamburger.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;400;600;800&display=swap" rel="stylesheet" />
 	<link href="css/reset.css" rel="stylesheet" type="text/css" />
 	<link href="css/main.css" rel="stylesheet" type="text/css" />
@@ -31,13 +30,14 @@
 					<li class="nav-link"><a href="lifecycle.html">the life cycle</a></li>
 					<li class="nav-link"><a href="data.html">data research</a></li>
 					<li class="nav-link"><a href="#">about us</a></li>
+					<button class="menu-close" type="button">
+						<span>close</span>
+					</button>
 				</ul>
 				<!-- menu button -->
-				<button class="hamburger hamburger--emphatic" type="button">
-					<span class="hamburger-box">
-						<span class="hamburger-inner"></span>
-					</span>
-				</button>
+				<button class="menu-content" type="button">
+					<span class="menu-inner">Menu</span>
+			</button>
 			</nav>
 		</header>
 		<!-- video -->
@@ -59,7 +59,7 @@
 			<h2 class="hidden">Introduction to stag beetle data</h2>
 			<div class="bionomics-title-container">
 				<h3> Data Research</h3>
-				<p>Enjoy more interesting facts about Stag Beetles as well as what t do if oyu encounter a park on your next trip to the park.</p>
+				<p>Learn more interesting facts about Stag Beetles habitats, as well as what to do if you encounter a beetle in te park on your next walk.</p>
 				<!-- data chart and text -->
 				<section id="data-story-one" class="data-story">
 					<h2 class="hidden">Google Chart 1</h2>
@@ -124,7 +124,7 @@
 					<h4>
 						2. The amount of predators of the stag beetle, across Europe
 					</h4>
-					<div id="columnchart-mask-two">
+					<div id="columnchart-mask-two" class="chart-container">
 						<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 						<script type="text/javascript">
 							google.charts.load('current');
@@ -177,7 +177,7 @@
 					<h4>
 						3. Which region has the biggest male body length in Europe and UK?
 					</h4>
-					<div id="europe-distribution">
+					<div id="europe-distribution" class="chart-container">
 						<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 						<script type="text/javascript">
 						  google.charts.load('current', {'packages':['corechart']});
