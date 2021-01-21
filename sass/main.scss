@@ -20,7 +20,7 @@ html,
 }
 
 body {
-  position:relative;
+  position: relative;
   font-family: "Exo", sans-serif;
   overflow-x: hidden;
 }
@@ -95,7 +95,7 @@ nav {
   transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
 
-.nav-links.is-active{
+.nav-links.is-active {
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
@@ -121,22 +121,20 @@ nav {
 }
 
 // menu button
-.menu-content{
-  font-family: 'Exo', sans-serif;
+.menu-content {
+  font-family: "Exo", sans-serif;
   cursor: pointer;
   padding: 20px;
   border: 0;
   background-color: transparent;
-  
 }
-.menu-content span{
+.menu-content span {
   font-size: 3em;
   text-transform: uppercase;
 }
 
-.menu-close
-{
-  font-family: 'Exo', sans-serif;
+.menu-close {
+  font-family: "Exo", sans-serif;
   position: absolute;
   top: 54px;
   right: 85px;
@@ -146,8 +144,7 @@ nav {
   background-color: transparent;
 }
 
-.menu-close span
-{
+.menu-close span {
   font-size: 3em;
   text-transform: uppercase;
 }
@@ -668,26 +665,32 @@ canvas {
 .bionomics-title-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
 }
 
-.bionomics-title-container h3 {
+.bionomics-title h3 {
   font-size: $exo-header;
   font-weight: 700;
   text-align: center;
 }
+
+.bionomics-title p{
+  text-align: center;
+}
+
 .bionomics-title-container p {
-  // max-width: 500px;
   margin-top: 20px;
   line-height: 1.5;
-  text-align: center;
 }
 
 .highlight {
   width: 75%;
+  height: auto;
   padding: 15px;
   background-color: rgb(223, 234, 248);
   margin: 0 auto;
+  font-size: 1.5rem;
 }
 
 .data-story {
@@ -698,7 +701,7 @@ canvas {
   line-height: 1.5;
   font-size: 2em;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 .data-story span {
@@ -976,8 +979,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 }
 
 // custom back to menu
-.back-to-menu
-{
+.back-to-menu {
   margin-left: 80px;
   height: 0;
   background-color: teal;
