@@ -553,21 +553,21 @@ canvas {
   line-height: 1.5; }
 
 .highlight {
+  font-size: 2rem;
   width: 75%;
   height: auto;
   padding: 15px;
   background-color: #dfeaf8;
-  margin: 0 auto;
-  font-size: 1.5rem; }
+  margin: 0 auto; }
 
 .data-story {
-  margin-top: 60px; }
+  margin-top: 130px; }
 
 .data-story h4 {
   line-height: 1.5;
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: center;
-  margin-top: 20px; }
+  margin-top: 15px; }
 
 .data-story span {
   font-weight: 600; }
