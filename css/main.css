@@ -94,7 +94,7 @@ nav {
   opacity: 0px; }
 
 .menu-content {
-  font-family: 'Exo', sans-serif;
+  font-family: "Exo", sans-serif;
   cursor: pointer;
   padding: 20px;
   border: 0;
@@ -105,7 +105,7 @@ nav {
   text-transform: uppercase; }
 
 .menu-close {
-  font-family: 'Exo', sans-serif;
+  font-family: "Exo", sans-serif;
   position: absolute;
   top: 54px;
   right: 85px;
@@ -537,23 +537,28 @@ canvas {
 .bionomics-title-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: 0 auto; }
 
-.bionomics-title-container h3 {
+.bionomics-title h3 {
   font-size: 4vw;
   font-weight: 700;
   text-align: center; }
 
+.bionomics-title p {
+  text-align: center; }
+
 .bionomics-title-container p {
   margin-top: 20px;
-  line-height: 1.5;
-  text-align: center; }
+  line-height: 1.5; }
 
 .highlight {
   width: 75%;
+  height: auto;
   padding: 15px;
   background-color: #dfeaf8;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 1.5rem; }
 
 .data-story {
   margin-top: 60px; }
@@ -562,7 +567,7 @@ canvas {
   line-height: 1.5;
   font-size: 2em;
   text-align: center;
-  margin-top: 100px; }
+  margin-top: 20px; }
 
 .data-story span {
   font-weight: 600; }
