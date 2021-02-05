@@ -503,10 +503,31 @@ model-viewer {
     font-weight: 700;
   }
 }
+// intro-video wrapper
+.showcase {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// vidoe container
+.video-container {
+  position: absolute;
+  top: -170px;
+  left: -90px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
 #start-button {
+  position: absolute;
+  top: 60%;
   cursor: pointer;
-  margin-top: 90px;
+  z-index: 1;
 }
 
 #start-button a {
@@ -518,12 +539,32 @@ model-viewer {
   text-transform: uppercase;
   font-size: 18px;
   padding: 20px;
-  display: block;
   border-style: none;
   color: black;
   border: 2px solid #444;
   background-color: transparent;
 }
+
+
+// #start-button {
+//   cursor: pointer;
+//   margin-top: 90px;
+// }
+
+// #start-button a {
+//   display: block;
+//   width: 375px;
+//   height: 65px;
+//   text-decoration: none;
+//   text-align: center;
+//   text-transform: uppercase;
+//   font-size: 18px;
+//   padding: 20px;
+//   border-style: none;
+//   color: black;
+//   border: 2px solid #444;
+//   background-color: transparent;
+// }
 
 // full screen of bugs
 #insect-fullscreen {

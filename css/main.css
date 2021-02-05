@@ -411,9 +411,27 @@ model-viewer {
   .right-side-space p span {
     font-weight: 700; }
 
+.showcase {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.video-container {
+  position: absolute;
+  top: -170px;
+  left: -90px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
 #start-button {
+  position: absolute;
+  top: 60%;
   cursor: pointer;
-  margin-top: 90px; }
+  z-index: 1; }
 
 #start-button a {
   display: block;
@@ -424,7 +442,6 @@ model-viewer {
   text-transform: uppercase;
   font-size: 18px;
   padding: 20px;
-  display: block;
   border-style: none;
   color: black;
   border: 2px solid #444;
