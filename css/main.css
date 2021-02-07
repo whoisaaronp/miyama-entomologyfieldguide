@@ -421,8 +421,8 @@ model-viewer {
 
 .video-container {
   position: absolute;
-  top: -170px;
-  left: -90px;
+  top: -160px;
+  left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden; }
