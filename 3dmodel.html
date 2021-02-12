@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Entomology Institute of Canada</title>
-	<link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;400;600;800&display=swap" rel="stylesheet"/>
-	<link href="css/reset.css" rel="stylesheet" type="text/css"/>
-	<link href="css/main.css" rel="stylesheet" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;400;600;800&display=swap" rel="stylesheet" />
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
 	<link rel="icon" href="images/eic-flavicon.png" type="image/png" sizes="16x16">
 	<!-- scrollMagic -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.js"></script>
@@ -18,60 +18,66 @@
 <body id="background-forest">
 	<main>
 		<!-- 1. background image -->
-			<header>
-				<div class="logo-container">
-					<h1 class="hidden">Site Logo</h1>
-					<a href="index.html"><img src="images/entomology-institute-logo.svg" alt="Entomology Institute of Canada" /></a>
-				</div>
-				<nav>
-					<ul class="nav-links">
-						<li class="nav-link"><a href="index.html">home</a></li>
-						<li class="nav-link"><a href="lifecycle.html">the life cycle</a></li>
-						<li class="nav-link"><a href="data.html">data research</a></li>
-						<li class="nav-link"><a href="#">about us</a></li>
-						<button class="menu-close" type="button">
-							<span>close</span>
-						</button>
-					</ul>
-					<!-- menu button -->
-					<button class="menu-content" type="button">
-						<span class="menu-inner">Menu</span>
+		<header>
+			<div class="logo-container">
+				<h1 class="hidden">Site Logo</h1>
+				<a href="index.html"><img src="images/entomology-institute-logo.svg"
+						alt="Entomology Institute of Canada" /></a>
+			</div>
+			<nav>
+				<ul class="nav-links">
+					<li class="nav-link"><a href="index.html">home</a></li>
+					<li class="nav-link"><a href="lifecycle.html">the life cycle</a></li>
+					<li class="nav-link"><a href="data.html">data research</a></li>
+					<li class="nav-link"><a href="#">about us</a></li>
+					<div class="menu-close">
+						<span>close</span>
+					</div>
+				</ul>
+				<!-- menu button -->
+				<button class="menu-content" type="button">
+					<span class="menu-inner">Menu</span>
 				</button>
-				</nav>
-			</header>
-			<!-- video -->
-			<section id="button-menus-container">
-				<!-- menu wrapper -->
-				<div class="menu-button-left-side" id="delay-button">
-					<a href="local-infantry.html"><div class="back-button hover-circle">
+			</nav>
+		</header>
+		<!-- video -->
+		<section id="button-menus-container">
+			<!-- menu wrapper -->
+			<div class="menu-button-left-side" id="delay-button">
+				<a href="local-infantry.html">
+					<div class="back-button hover-circle">
 						<!-- backbutton icon -->
 						<img src="images/close-button.png" alt="close-section-icon">
-					</div></a>
-					<h2 class="hidden">Left Menu</h2>
-					<!-- button wrapper -->
-					<section class="button-wrapper">
-						<h2 class="hidden">Option Menu</h2>
-						<a href="insects-details-page.html" class="button-stack">insect body</a>
-						<!-- gltf -->
-						<a href="3dmodel.html" class="button-stack">3D model</a>
-						<!-- videoplayer -->
-						<a href="matingvideo.html" class="button-stack">mating</a>
-						<!-- Scan for the VR experience -->
-						<a href="arexperience.html" class="button-stack">take one home</a>
-					</section>
-				</div>
-				<section class="threemodel">
-					<h2 class="hidden">3D Model</h2>
-					<model-viewer src="larvae/miyamastagbeetle.gltf" auto-rotate camera-controls alt="A 3D model of a Miyama StageBeetle"></model-viewer>
+					</div>
+				</a>
+				<h2 class="hidden">Left Menu</h2>
+				<!-- button wrapper -->
+				<section class="button-wrapper">
+					<h2 class="hidden">Option Menu</h2>
+					<a href="insects-details-page.html" class="button-stack">insect body</a>
+					<!-- gltf -->
+					<a href="3dmodel.html" class="button-stack">3D model</a>
+					<!-- videoplayer -->
+					<a href="matingvideo.html" class="button-stack">mating</a>
+					<!-- Scan for the VR experience -->
+					<!-- <a href="arexperience.html" class="button-stack">take one home</a> -->
 				</section>
-				<section class="right-side-space">
-					<!-- empty -->
-					<h3>Get up close and personal with the Miyama Stag Beetle.</h3>
-					<p>To get closer touch the screen and <span>Pinch</span> your thumb and finger (or two fingers) a little apart and move them close without lifting them from the screen.</p>
-					<p> You also can turn the insect's body by touching the screen and moving your finger in any direction.</p>
-					<p>Don't get too close, or it will bite!</p>
-				</section>
+			</div>
+			<section class="threemodel">
+				<h2 class="hidden">3D Model</h2>
+				<model-viewer src="larvae/miyamastagbeetle.gltf" auto-rotate camera-controls
+					alt="A 3D model of a Miyama StageBeetle"></model-viewer>
 			</section>
+			<section class="right-side-space">
+				<!-- empty -->
+				<h3>Get up close and personal with the Miyama Stag Beetle.</h3>
+				<p>To get closer touch the screen and <span>Pinch</span> your thumb and finger (or two fingers) a little
+					apart and move them close without lifting them from the screen.</p>
+				<p> You also can turn the insect's body by touching the screen and moving your finger in any direction.
+				</p>
+				<p>Don't get too close, or it will bite!</p>
+			</section>
+		</section>
 	</main>
 
 	<!-- Import the model viewer component -->
