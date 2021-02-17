@@ -2,8 +2,8 @@
   display: none; }
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box; }
 
 *:before,
@@ -28,7 +28,7 @@ header {
   margin: 0 auto; }
 
 #background-forest {
-  background-image: url(../images/zbynek-skrceny-background-unsplash.jpg);
+  background-image: url("../images/zbynek-skrceny-background-unsplash.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -46,7 +46,7 @@ nav {
 
 .nav-links li {
   display: inline;
-  padding: 0px 20px;
+  padding: 0 20px;
   list-style: none; }
 
 .hamburger {
@@ -63,8 +63,8 @@ nav {
   align-items: center;
   position: absolute;
   width: 100%;
-  top: 0vh;
-  right: 0px;
+  top: 0;
+  right: 0;
   height: 100vh;
   background-color: #969696;
   -webkit-transform: translateX(100%);
@@ -91,7 +91,7 @@ nav {
   color: #f1f1f1; }
 
 .nav-links li {
-  opacity: 0px; }
+  opacity: 0; }
 
 .menu-content {
   font-family: "Exo", sans-serif;
@@ -244,13 +244,11 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  margin: 0 30px 30px auto;
   width: 450px;
   height: 450px;
   padding: 20px;
-  margin-right: 30px;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 20px, 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s; }
@@ -379,10 +377,9 @@ nav {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  margin: 0 auto;
   width: 70%;
-  height: 100%;
-  margin: 0 auto; }
+  height: 100%; }
 
 model-viewer {
   width: 100%;
@@ -448,10 +445,10 @@ model-viewer {
   background-color: transparent; }
 
 iframe {
-  border-width: 0px; }
+  border-width: 0; }
 
 #insect-fullscreen {
-  background-image: url(../images/insect-fullscreen.jpeg);
+  background-image: url("../images/insect-fullscreen.jpeg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -551,8 +548,7 @@ canvas {
   width: 90%;
   height: auto;
   padding: 10px;
-  margin: 0 auto;
-  margin-top: 10px; }
+  margin: 10px auto 0; }
 
 .bionomics-title-container {
   display: flex;
@@ -640,8 +636,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 .chart-container {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  margin-top: 20px; }
+  margin: 20px auto 0; }
 
 #columnchart-mask-one {
   width: 1000px;
@@ -669,8 +664,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   align-items: center;
   position: relative;
   justify-content: space-between;
-  margin: 0 auto;
-  margin-top: 65px; }
+  margin: 65px auto 0; }
   #insect-cycle-grid span {
     margin-top: 5px;
     font-size: 10px;
@@ -684,8 +678,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   align-items: center;
   position: relative;
   justify-content: space-between;
-  margin: 0 auto;
-  margin-top: 330px; }
+  margin: 330px auto 0; }
 
 #insect-cycle-grid-3 {
   width: 90%;
@@ -695,8 +688,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   align-items: center;
   position: relative;
   justify-content: space-between;
-  margin: 0 auto;
-  margin-top: 330px; }
+  margin: 330px auto 0; }
 
 #insect-cycle-grid-4 {
   width: 90%;
@@ -706,8 +698,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   align-items: center;
   position: relative;
   justify-content: space-between;
-  margin: 0 auto;
-  margin-top: 330px; }
+  margin: 330px auto 0; }
 
 .insect-cycle-stlye {
   width: 40%;
